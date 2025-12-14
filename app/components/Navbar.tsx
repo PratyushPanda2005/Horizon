@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <header className="w-full px-8 py-4 bg-[#F2F4F6]">
+    <header className="w-full px-8 py-4 bg-[#F2F4F6] max-md:hidden">
       <nav className="mx-auto flex max-w-7xl items-center gap-10 ">
         <img
         src={"/about/logos/logo.svg"}

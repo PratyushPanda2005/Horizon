@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="w-full bg-[#006077] text-white">
@@ -66,29 +68,29 @@ const Footer = () => {
           <h3 className="mb-3 font-gilroy-semibold">Pages</h3>
           <ul className="space-y-4 font-gilroy-medium text-sm">
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="#" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="#" className="hover:underline">
                 Destinations
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="#" className="hover:underline">
                 Packages
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="#" className="hover:underline">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="#" className="hover:underline">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

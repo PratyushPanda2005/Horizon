@@ -27,7 +27,7 @@ const OurValues = () => {
   ];
 
   return (
-    <section className="w-full bg-[#F2F4F6] px-8 py-12">
+    <section className="w-full bg-[#F2F4F6] px-6 md:px-8 py-12">
       <div className="mx-auto max-w-7xl">
 
         <div className="mb-14 text-center">
@@ -40,11 +40,11 @@ const OurValues = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-2 md:gap-6 grid-cols-2 lg:grid-cols-4">
           {values.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl bg-white p-8 text-center"
+              className="rounded-2xl bg-white p-4 md:p-8 text-center"
             >
               <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-[#E6F6FC]">
                 <img src={item.icon} alt={item.title} className="h-8 w-8" />

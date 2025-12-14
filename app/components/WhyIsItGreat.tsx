@@ -27,14 +27,14 @@ const WhyIsItGreat = () => {
   ];
 
   return (
-    <section className="w-full bg-[#F2F4F6] px-8 py-20">
+    <section className="w-full bg-[#F2F4F6] px-6 md:px-8 py-20">
       <div className="mx-auto max-w-7xl">
 
         <h2 className="mb-16 text-center text-3xl font-gilroy-semibold text-[#16242A] md:text-4xl">
           Why Is It Great
         </h2>
 
-        <div className="grid gap-y-20 gap-x-12 sm:grid-cols-2 max-w-3xl mx-auto w-full">
+        <div className="grid gap-y-16 md:gap-y-20 gap-x-4 md:gap-x-12 grid-cols-2 max-w-3xl mx-auto w-full">
           {reasons.map((item) => (
             <div
               key={item.title}

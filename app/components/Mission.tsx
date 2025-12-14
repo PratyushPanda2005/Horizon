@@ -27,17 +27,17 @@ const Mission = () => {
   ];
 
   return (
-   <section className="w-full px-8 py-12 md:py-20 bg-[#F2F4F6]">
-  <div className="mx-auto flex max-w-7xl gap-10 items-stretch md:flex-row">
+   <section className="w-full px-6 md:px-8 py-12 md:py-20 bg-[#F2F4F6]">
+  <div className="mx-auto flex flex-col-reverse max-w-7xl gap-10 items-stretch md:flex-row">
 
-    <div className="flex flex-1 flex-col justify-between">
+    <div className="flex flex-1 flex-col justify-between max-md:gap-4">
       {features.map((item) => (
         <div
           key={item.title}
-          className="flex items-start gap-4 rounded-xl bg-white px-6 py-5"
+          className="flex items-start gap-4 rounded-xl bg-white p-4 md:px-6 md:py-5"
         >
-          <div className="rounded-2xl bg-linear-to-r from-[#FFD9BD50] to-[#B3E5F150] h-full px-6 flex justify-center items-center">
-            <img src={item.icon} alt={item.title} />
+          <div className="rounded-2xl bg-linear-to-r from-[#FFD9BD50] to-[#B3E5F150] h-full md:px-6 max-md:py-6 max-md:w-full flex justify-center items-center">
+            <img src={item.icon} alt={item.title} className=""/>
           </div>
 
           <div>
