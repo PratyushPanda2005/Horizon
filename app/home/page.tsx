@@ -4,6 +4,19 @@ import HeroBanner from './components/Banners'
 import ExploreThemes from './components/ExploreThemes'
 import HeroSlider from '../common/HeroSlider'
 import EarlyBirdOffers from './components/EarlyBirdOffers'
+import WeOfferBest from './components/WeOfferBest'
+import HowItWorks from './components/HowItWorks'
+import BestPackages from './components/BestPackages'
+import Hotels from './components/Hotels'
+import NewsletterBanner from '../common/Form'
+import CustomizeBooking from './components/CustomizeBooking'
+import PhoenixFlyBlogs from './components/PhoenixFlyBlogs'
+import ExploreTheWorld from './components/ExploreTheWorld'
+import RecognitionByGovernment from '../about/components/Clients'
+import Partners from './components/Partners'
+import Gallery from './components/Gallery'
+import FAQ from '../common/FAQ'
+import Footer from '../common/Footer'
 
 
 const slides = [
@@ -41,6 +54,18 @@ const HomePage = () => {
                 slides={slides}
             />
             <EarlyBirdOffers />
+            <WeOfferBest />
+            <HowItWorks />
+            <BestPackages />
+            <Hotels />
+            <NewsletterBanner />
+            <CustomizeBooking />
+            <PhoenixFlyBlogs />
+            {/* <ExploreTheWorld /> */}
+            <Partners />
+            <Gallery />
+            <FAQ />
+            <Footer />
         </section>
     )
 }
