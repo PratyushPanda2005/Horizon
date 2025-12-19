@@ -96,7 +96,13 @@ export default function CustomizeBooking() {
 }
 
 /* Feature Item */
-function Feature({ icon, title, desc }) {
+interface FeatureProps {
+    icon: React.ReactNode
+    title: string
+    desc: string
+}
+
+function Feature({ icon, title, desc }: FeatureProps) {
     return (
         <div className="flex flex-col justify-center items-center">
             <div className="mb-3 text-orange-500">
