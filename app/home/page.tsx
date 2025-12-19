@@ -14,7 +14,6 @@ import PhoenixFlyBlogs from './components/PhoenixFlyBlogs'
 import Partners from './components/Partners'
 import Gallery from './components/Gallery'
 import FAQ from '../common/FAQ'
-import Footer from '../common/Footer'
 
 
 const slides = [
@@ -63,7 +62,6 @@ const HomePage = () => {
             <Partners />
             <Gallery />
             <FAQ />
-            <Footer />
         </section>
     )
 }
