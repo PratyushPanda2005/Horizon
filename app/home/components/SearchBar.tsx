@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { CalendarDays, Hotel, Car, MapPin, Train, Bus, Plane, Ship, Package } from "lucide-react"
+import Link from "next/link"
 
 const tabs = [
     { label: "Packages", icon: Package },
@@ -127,8 +128,10 @@ export default function SearchBar() {
                         </Field>
                     </FieldBox>
 
-                    <Button className="h-full rounded-lg bg-slate-800 text-white hover:bg-slate-700">
-                        Search
+                    <Button asChild className="h-full rounded-lg bg-slate-800 text-white hover:bg-slate-700">
+                        <Link href="/listing/package-listing">
+                            Search
+                        </Link>
                     </Button>
 
                 </div>

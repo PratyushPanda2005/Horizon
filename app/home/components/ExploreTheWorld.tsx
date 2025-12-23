@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import DestinationPopup from "./DestinationPopup";
 
 const indiaRegions = [
     {
@@ -70,6 +71,7 @@ const ExploreTheWorld: React.FC = () => {
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
     const [tab, setTab] = useState<"india" | "international">("india");
     const regions = tab === "india" ? indiaRegions : internationalRegions;
+    const [showPopup, setShowPopup] = useState(false);
 
 
     /** Auto cycle */
@@ -161,6 +163,11 @@ const ExploreTheWorld: React.FC = () => {
                                 setActiveIndex(index);
                             }}
                             onMouseLeave={startAutoCycle}
+                            onClick={() => {
+                                if (tab === "international" && region.title === "More") {
+                                    setShowPopup(true);
+                                }
+                            }}
                         >
                             <img
                                 src={region.image}
@@ -202,6 +209,11 @@ const ExploreTheWorld: React.FC = () => {
                     ))
                 }
             </div >
+            <DestinationPopup
+                isOpen={showPopup}
+                onClose={() => setShowPopup(false)}
+            />
+
         </section >
     );
 };
