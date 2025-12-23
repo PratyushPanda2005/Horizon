@@ -133,13 +133,23 @@ export default function Navbar() {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
 
-                            <NavItem label="Explore Extraordinary" />
-                            <NavItem label="Offers" />
-                            <NavItem label="Support" />
-                            <NavItem label="Review & Ratings" />
-                            <NavItem label="About Us" />
                             <NavigationMenuItem>
-                                <span className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Blogs</span>
+                                <Link href="/explore_extraordinary" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Explore Extraordinary</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/offers" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Offers</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/support" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Support</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/review_ratings" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Review & Ratings</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/about_us" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">About Us</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <Link href="/blogs" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Blogs</Link>
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>

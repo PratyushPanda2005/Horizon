@@ -14,6 +14,7 @@ import PhoenixFlyBlogs from './components/PhoenixFlyBlogs'
 import Partners from './components/Partners'
 import Gallery from './components/Gallery'
 import FAQ from '../common/FAQ'
+import ExploreTheWorld from './components/ExploreTheWorld'
 
 
 const slides = [
@@ -58,7 +59,7 @@ const HomePage = () => {
             <NewsletterBanner />
             <CustomizeBooking />
             <PhoenixFlyBlogs />
-            {/* <ExploreTheWorld /> */}
+            <ExploreTheWorld />
             <Partners />
             <Gallery />
             <FAQ />
