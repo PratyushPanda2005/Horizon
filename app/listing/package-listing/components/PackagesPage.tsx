@@ -12,8 +12,8 @@ import {
 
 export default function PackagesPage() {
     return (
-        <div className="min-h-screen">
-            <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
+        <div className="min-h-screen px-8">
+            <div className="max-w-7xl mx-auto py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
                 {/* LEFT FILTERS */}
                 <aside className="hidden lg:block">
                     <Filters />
@@ -39,8 +39,8 @@ export default function PackagesPage() {
 function Header() {
     return (
         <div className="mb-4">
-            <h1 className="text-2xl font-bold">34 Packages Found</h1>
-            <p className="text-sm text-gray-500">
+            <h1 className="text-4xl font-gilroy-bold">34 Packages Found</h1>
+            <p className="text-sm font-gilroy-medium text-gray-500">
                 Choose from various package options which are fully customizable
             </p>
         </div>
@@ -54,11 +54,11 @@ function SearchBar() {
                 <Search size={18} className="text-gray-400" />
                 <input
                     placeholder="Search By Property Name e.g. Manali"
-                    className="outline-none text-sm w-full"
+                    className="outline-none text-sm w-full font-gilroy-medium"
                 />
             </div>
 
-            <button className="flex items-center gap-2 border rounded-lg px-4 py-2 text-sm">
+            <button className="flex items-center gap-2 border rounded-lg px-4 py-2 text-sm font-gilroy-medium">
                 <SlidersHorizontal size={16} />
                 Sort: Price Low to High
             </button>
@@ -72,15 +72,15 @@ function Filters() {
         <div className="space-y-5 sticky top-4 text-sm">
             {/* MAP */}
             <div className="h-36 rounded-lg overflow-hidden bg-gray-200 flex items-end">
-                <button className="w-full bg-[#2b6f82] text-white py-2 text-sm">
+                <button className="w-full bg-[#2b6f82] text-white py-2 text-sm font-gilroy-medium">
                     View in Map
                 </button>
             </div>
 
             {/* OFFER APPLIED */}
             <div>
-                <h4 className="font-semibold mb-2">Offer Applied</h4>
-                <div className="bg-orange-50 text-orange-600 text-xs px-3 py-3 rounded">
+                <h4 className="font-gilroy-semibold mb-2">Offer Applied</h4>
+                <div className="bg-orange-50 text-orange-600 text-xs font-gilroy-medium px-3 py-3 rounded">
                     Eligible for Group Booking Benefits
                 </div>
             </div>
@@ -90,8 +90,8 @@ function Filters() {
             {/* FILTER BY */}
             <div>
                 <div className="flex justify-between items-center mb-3">
-                    <h4 className="font-semibold">Filter By</h4>
-                    <button className="text-xs text-gray-500">Clear All</button>
+                    <h4 className="font-gilroy-semibold">Filter By</h4>
+                    <button className="text-xs font-gilroy-medium text-gray-500">Clear All</button>
                 </div>
 
                 <FilterItem label="Early Bird Offers" count={2} />
@@ -105,9 +105,9 @@ function Filters() {
 
             {/* PRICE RANGE */}
             <div>
-                <h4 className="font-semibold mb-3">Price Range</h4>
+                <h4 className="font-gilroy-semibold mb-3">Price Range</h4>
 
-                <div className="flex justify-between text-xs text-gray-600 mb-2">
+                <div className="flex justify-between text-xs font-gilroy-medium text-gray-600 mb-2">
                     <span>₹ 0</span>
                     <span>₹ 28,000+</span>
                 </div>
@@ -123,7 +123,7 @@ function Filters() {
 
             {/* PACKAGE THEME */}
             <div>
-                <h4 className="font-semibold mb-3">Package Theme</h4>
+                <h4 className="font-gilroy-semibold mb-3">Package Theme</h4>
 
                 <FilterItem label="All Packages" count={2} />
                 <FilterItem label="Solo" count={2} />
@@ -140,7 +140,7 @@ function Filters() {
 
             {/* DURATION */}
             <div>
-                <h4 className="font-semibold mb-3">Duration</h4>
+                <h4 className="font-gilroy-semibold mb-3">Duration</h4>
 
                 <FilterItem label="2N/3D" count={2} />
                 <FilterItem label="3N/4D" count={2} />
@@ -165,9 +165,9 @@ function FilterItem({
         <div className="flex items-center justify-between py-1 cursor-pointer">
             <div className="flex items-center gap-2">
                 <Square size={16} />
-                <span>{label}</span>
+                <span className="font-gilroy-medium">{label}</span>
             </div>
-            <span className="text-xs text-gray-600">{count}</span>
+            <span className="text-xs font-gilroy-medium text-gray-600">{count}</span>
         </div>
     );
 }
@@ -195,17 +195,17 @@ function PackageCard({ early }: { early?: boolean }) {
             {/* Content */}
             <div className="flex-1">
                 <div className="flex justify-between">
-                    <h3 className="font-semibold">
+                    <h3 className="font-gilroy-semibold">
                         Amazing Holiday in Kullu, Manali & Shimla
                     </h3>
                     <Heart size={18} />
                 </div>
 
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs font-gilroy-medium text-gray-500 mt-1">
                     1N Shimla | 3N Manali | 2N Kullu
                 </p>
 
-                <div className="flex gap-4 text-xs text-gray-600 mt-3">
+                <div className="flex gap-4 text-xs font-gilroy-medium text-gray-600 mt-3">
                     <IconText icon={<Plane size={14} />} text="2 Flights" />
                     <IconText icon={<Hotel size={14} />} text="11 Hotels" />
                     <IconText icon={<Activity size={14} />} text="5 Activities" />
@@ -216,10 +216,10 @@ function PackageCard({ early }: { early?: boolean }) {
             {/* Price */}
             <div className="md:text-right flex md:flex-col justify-between md:justify-end">
                 <div>
-                    <p className="text-orange-500 text-lg font-bold">₹ 22,999</p>
-                    <p className="text-xs text-gray-500">Per Person</p>
+                    <p className="text-orange-500 text-lg font-gilroy-bold">₹ 22,999</p>
+                    <p className="text-xs font-gilroy-medium text-gray-500">Per Person</p>
                 </div>
-                <button className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm">
+                <button className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-gilroy-medium">
                     Book Now
                 </button>
             </div>
@@ -239,10 +239,10 @@ function IconText({ icon, text }: { icon: React.ReactNode; text: string }) {
 function AdBanner() {
     return (
         <div className="bg-gradient-to-r from-orange-100 to-green-100 rounded-xl p-4 flex items-center justify-between">
-            <p className="text-sm font-medium">
+            <p className="text-sm font-gilroy-medium">
                 Get flat <strong>10% OFF</strong> on your bookings!
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm">
+            <button className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-gilroy-medium">
                 Sign In
             </button>
         </div>
