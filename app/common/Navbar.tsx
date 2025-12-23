@@ -146,7 +146,7 @@ export default function Navbar() {
                                 <Link href="/review_ratings" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Review & Ratings</Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link href="/about_us" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">About Us</Link>
+                                <Link href="/about" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">About Us</Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <Link href="/blogs" className="cursor-pointer text-text hover:text-white text-sm font-gilroy-semibold transition-colors">Blogs</Link>

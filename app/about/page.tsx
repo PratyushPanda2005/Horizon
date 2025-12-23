@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 const AboutUsPage = () => {
     return (
         <main>
-            <Navbar />
             <Hero />
             <Story />
             <Mission />
