@@ -2,9 +2,9 @@ export default function Footer() {
     return (
         <footer className="bg-white text-gray-800">
             {/* Top Links Section */}
-            <div className="bg-white pt-12 px-8">
+            <div className="bg-white pt-12 px-4 md:px-8">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-12 font-gilroy-medium">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-16 gap-x-8 gap-y-12 font-gilroy-medium">
 
                         {/* Row 1 */}
                         <div>
@@ -128,7 +128,7 @@ export default function Footer() {
                     </div>
 
                     {/* Contact Section */}
-                    <div className="pb-10 flex justify-between gap-10 text-sm font-gilroy-medium">
+                    <div className="pb-10 flex flex-col md:flex-row justify-between gap-10 text-sm font-gilroy-medium">
 
                         {/* Contact */}
                         <div className="flex flex-col items-center">

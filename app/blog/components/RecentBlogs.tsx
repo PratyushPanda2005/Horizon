@@ -4,12 +4,12 @@ const RecentBlogs = () => {
     const blogs = Array.from({ length: 9 });
 
     return (
-        <section className="bg-gray-50 pb-20 px-8 font-gilroy-medium">
+        <section className="bg-gray-50 pb-20 px-4 md:px-8 font-gilroy-medium">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
-                    <h2 className="text-2xl font-gilroy-semibold text-gray-900">
+                <div className="flex flex-col md:flex-row items-center md:justify-between gap-3 md:gap-6 mb-10">
+                    <h2 className="text-lg md:text-2xl font-gilroy-semibold text-gray-900">
                         Recent Blogs
                     </h2>
 
@@ -27,11 +27,11 @@ const RecentBlogs = () => {
                 </div>
 
                 {/* Blog Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                     {blogs.map((_, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-2xl p-4 shadow-none hover:shadow-md transition"
+                            className="bg-white rounded-2xl border border-[#EBEBEB] p-4 shadow-none hover:shadow-md transition"
                         >
                             {/* Image */}
                             <div className="rounded-xl overflow-hidden mb-4">
@@ -67,8 +67,8 @@ const RecentBlogs = () => {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-xs text-gray-600 mb-3">
-                                Soak in the charm of whitewashed streets & unforgettable views.
+                            <p className="text-xs text-gray-600 mb-3 leading-relaxed">
+                                Master the art of smart packing with tips for stress-free and Master the art of smart packing with tips for stress-free and Master the art of smart packing with tips for stress-free...
                             </p>
 
                             {/* CTA */}
@@ -85,7 +85,7 @@ const RecentBlogs = () => {
                         ‹
                     </button>
 
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+                    {[1, 2, 3, 4, 5].map((n) => (
                         <button
                             key={n}
                             className={`w-9 h-9 rounded-lg text-sm ${n === 1
