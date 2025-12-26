@@ -4,17 +4,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 
 const TrendingPackages = () => {
     const trips = Array.from({ length: 6 });
 
     return (
-        <section className="bg-gray-50 py-20 px-8">
+        <section className="pt-20 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-gilroy-semibold text-gray-900 mb-3">
+                    <h2 className="text-2xl md:text-3xl font-gilroy-semibold text-gray-900 mb-3">
                         Explore All Travel Packages In One Place
                     </h2>
                     <p className="text-gray-600 text-sm">
@@ -24,16 +25,16 @@ const TrendingPackages = () => {
 
                 {/* Subheading + Nav */}
                 <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-lg font-gilroy-semibold text-gray-900">
+                    <h3 className="text-base md:text-lg font-gilroy-semibold text-gray-900">
                         Trending Trips Everyone&apos;s Booking
                     </h3>
 
                     <div className="flex gap-3">
-                        <div className="swiper-button-prev-custom w-9 h-9 rounded-full border flex items-center justify-center cursor-pointer">
-                            ‹
+                        <div className="swiper-button-prev-custom w-6 h-6 md:w-9 md:h-9 rounded-full border flex items-center justify-center cursor-pointer">
+                            <ArrowLeftIcon className="w-3 h-3 md:w-4 md:h-4" />
                         </div>
-                        <div className="swiper-button-next-custom w-9 h-9 rounded-full border flex items-center justify-center cursor-pointer text-orange-500">
-                            ›
+                        <div className="swiper-button-next-custom w-6 h-6 md:w-9 md:h-9 rounded-full border flex items-center justify-center cursor-pointer text-orange-500">
+                            <ArrowRightIcon className="w-3 h-3 md:w-4 md:h-4" />
                         </div>
                     </div>
                 </div>
@@ -45,12 +46,12 @@ const TrendingPackages = () => {
                         prevEl: ".swiper-button-prev-custom",
                         nextEl: ".swiper-button-next-custom",
                     }}
-                    spaceBetween={24}
+                    spaceBetween={16}
                     slidesPerView={1.1}
                     breakpoints={{
-                        640: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3.2 },
-                        // 1280: { slidesPerView: 4 },
+                        0: { slidesPerView: 1.1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
                     }}
                 >
                     {trips.map((_, i) => (
@@ -96,11 +97,11 @@ const TrendingPackages = () => {
 
                                     {/* Price */}
                                     <div className="flex items-center gap-2">
-                                        <span className="text-lg font-gilroy-semibold text-orange-400">
-                                            ₹ 5,999
+                                        <span className="text-lg font-gilroy-semibold text-white">
+                                            <span className="text-primary-orange">₹</span> 5,999
                                         </span>
                                         <span className="text-xs line-through text-gray-400">
-                                            ₹ 12,999
+                                            12,999
                                         </span>
                                         <span className="text-xs text-gray-300">
                                             Per Person
