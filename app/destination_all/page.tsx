@@ -3,6 +3,7 @@ import TrendingPackages from './components/TrendingPackages'
 import NatureEscapes from './components/NatureEscapes'
 import VisaOnArrival from './components/VisaOnArrival'
 import DestinationSlider from '../common/DestinationSlider';
+import TripsByDuration from './components/TripsByDuration';
 
 const visaTrips = [
     {
@@ -33,6 +34,7 @@ const DestinationPage = () => {
             <TrendingPackages />
             <NatureEscapes />
             <VisaOnArrival />
+            <TripsByDuration />
             <DestinationSlider
                 title="Visa on Arrival Destinations"
                 items={visaTrips}
