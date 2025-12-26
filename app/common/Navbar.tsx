@@ -186,7 +186,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="fixed top-4 right-4 z-50">
+                <div className="fixed top-4 right-4 z-50 md:hidden">
                     <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-text p-2">
                         {isMobileMenuOpen ? (
                             <X className="h-6 w-6 relative z-50 text-black" />

@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 const categories = [
     {
@@ -110,8 +111,6 @@ const BlogCategories = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-
-
                 </div>
 
 
@@ -119,7 +118,7 @@ const BlogCategories = () => {
                 {/* Desktop Grid */}
                 <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
                     {categories.map((category, index) => (
-                        <div key={index}>
+                        <Link href={`/blog/blog_categories`} key={index}>
                             <div className="rounded-2xl overflow-hidden mb-4">
                                 <img
                                     src={category.image}
@@ -133,7 +132,7 @@ const BlogCategories = () => {
                             <p className="text-sm text-gray-600">
                                 {category.description}
                             </p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
