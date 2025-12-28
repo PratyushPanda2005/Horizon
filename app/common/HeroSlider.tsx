@@ -27,15 +27,15 @@ export default function HeroSlider({
     autoplayDelay = 3500,
 }: HeroSliderProps) {
     return (
-        <section className="w-full py-16 px-8">
+        <section className="w-full py-16 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-4xl font-gilroy-semibold mb-3">
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">
                         {heading}
                     </h2>
                     {subheading && (
-                        <p className="text-base text-gray-500 font-gilroy-medium">
+                        <p className="text-sm md:text-base text-gray-500 font-gilroy-medium">
                             {subheading}
                         </p>
                     )}
@@ -67,11 +67,11 @@ export default function HeroSlider({
 
                                 {/* Content */}
                                 <div className="relative z-10 h-full flex items-end">
-                                    <div className="p-10 text-white">
-                                        <h2 className="text-3xl md:text-4xl font-gilroy-semibold">
+                                    <div className="md:p-10 p-4 pb-10 text-white">
+                                        <h2 className="text-2xl md:text-4xl font-gilroy-semibold">
                                             {slide.title}
                                         </h2>
-                                        <p className="tracking-widest text-base font-gilroy-medium mb-4">
+                                        <p className="tracking-widest md:text-base text-xs font-gilroy-medium mb-4">
                                             {slide.offer}
                                         </p>
                                         <Button className="bg-orange-500 hover:bg-orange-600 transition-colors text-white px-6 py-3 rounded-lg text-sm font-gilroy-medium">

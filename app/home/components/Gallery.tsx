@@ -11,11 +11,11 @@ const images = [
 export default function Gallery() {
     return (
         <section className="pb-12 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-2">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-[#16242A] mb-2">
                     Gallery
                 </h2>
-                <p className="text-base font-gilroy-medium text-slate-600 mb-16">
+                <p className="text-sm md:text-base font-gilroy-medium text-slate-600 mb-16">
                     Have a look at the beautiful images of our happy customers
                 </p>
             </div>
@@ -25,9 +25,8 @@ export default function Gallery() {
                     {images.map((img, index) => (
                         <div
                             key={index}
-                            className={`
-                w-[320px] h-[220px] rounded-none overflow-hidden
-                
+                            className={` w-[200px] h-[150px]
+                md:w-[320px] md:h-[220px] rounded-none overflow-hidden
                 ${index % 2 === 0
                                     ? "-rotate-6 translate-x-8"
                                     : "rotate-6 translate-x-8"

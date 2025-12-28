@@ -63,54 +63,55 @@ const cards = [
 
 export default function BestPackages() {
     return (
-        <section className="w-full py-16">
-            <div className="max-w-7xl mx-auto px-8">
-                <h2 className="text-4xl font-gilroy-semibold text-center mb-3">
-                    Explore Our Early Bird Offers
+        <section className="w-full py-10 md:py-16">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-gilroy-semibold text-center mb-3">
+                    Explore Best Packages
                 </h2>
-                <p className="text-base text-gray-500 font-gilroy-medium text-center mb-8">
-                    Grab our early bird offer deals and enjoy your vacation with multiple benefits
+                <p className="text-sm md:text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                    Embark on a mesmerizing journey to explore the top destinations
                 </p>
 
-                <div className="flex justify-center items-center mb-8 gap-8 text-sm font-gilroy-medium">
-                    <div className="bg-primary-orange text-white w-[120px] h-[56px] rounded-lg flex justify-center items-center ">
+                <div className="flex flex-wrap justify-center items-center mb-8 gap-3 md:gap-8 text-xs md:text-sm font-gilroy-medium pb-2 md:pb-0">
+                    <div className="bg-primary-orange text-white w-auto min-w-max md:w-[120px] px-6 md:px-0 h-[48px] md:h-[56px] rounded-lg flex justify-center items-center whitespace-nowrap">
                         All
                     </div>
-                    <div className="bg-white text-black w-[120px] h-[56px] rounded-lg flex justify-center items-center">
+                    <div className="bg-white text-black w-auto min-w-max md:w-[120px] px-6 md:px-0 h-[48px] md:h-[56px] rounded-lg flex justify-center items-center whitespace-nowrap">
                         Popular
                     </div>
-                    <div className="bg-white text-black w-[120px] h-[56px] rounded-lg flex justify-center items-center">
+                    <div className="bg-white text-black w-auto min-w-max md:w-[120px] px-6 md:px-0 h-[48px] md:h-[56px] rounded-lg flex justify-center items-center whitespace-nowrap">
                         Trending
                     </div>
-                    <div className="bg-white text-black w-[120px] h-[56px] rounded-lg flex justify-center items-center">
+                    <div className="bg-white text-black w-auto min-w-max md:w-[120px] px-6 md:px-0 h-[48px] md:h-[56px] rounded-lg flex justify-center items-center whitespace-nowrap">
                         Featured
                     </div>
-                    <div className="bg-white text-black w-[120px] h-[56px] rounded-lg flex justify-center items-center">
+                    <div className="bg-white text-black w-auto min-w-max md:w-[120px] px-6 md:px-0 h-[48px] md:h-[56px] rounded-lg flex justify-center items-center whitespace-nowrap">
                         Top Visited
                     </div>
                 </div>
 
                 {/* Tabs */}
-                <div className="bg-none p-4 shadow-none border-none max-w-6xl w-full mx-auto">
+                <div className="bg-none p-0 md:p-4 shadow-none border-none max-w-6xl w-full mx-auto">
 
                     {/* Carousel */}
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
                             spaceBetween={16}
-                            slidesPerView={3}
                             navigation={{
                                 nextEl: ".deals-next",
                             }}
                             breakpoints={{
-                                0: { slidesPerView: 1.1 },
+                                0: { slidesPerView: 1 },
+                                640: { slidesPerView: 1.5 },
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 },
                             }}
+                            className="overflow-visible md:overflow-hidden!"
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative h-[420px] rounded-2xl overflow-hidden">
+                                    <div className="relative h-[380px] md:h-[420px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -119,31 +120,31 @@ export default function BestPackages() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
                                         {/* Timer */}
-                                        <div className="absolute top-4 right-4 flex items-center gap-1 bg-orange-500 text-white text-xs px-4 py-2 rounded-lg">
+                                        <div className="absolute top-4 right-4 flex items-center gap-1 bg-orange-500 text-white text-xs px-3 py-1.5 md:px-4 md:py-2 rounded-lg">
                                             <span><Timer className="h-[1em] w-[1em]" /></span>{card.timer}
                                         </div>
 
                                         {/* Content */}
-                                        <div className="absolute bottom-0 p-5 text-white w-full font-gilroy-medium">
+                                        <div className="absolute bottom-0 p-4 md:p-5 text-white w-full font-gilroy-medium">
                                             <span className="text-xs bg-black/50 px-3 py-1 rounded-full inline-block mb-2">
                                                 {card.type}
                                                 {card.meta && <span className="ml-2">{card.meta}</span>}
                                             </span>
-                                            <h3 className="text-xl font-semibold">{card.title}</h3>
-                                            <p className="text-sm opacity-80 mb-3">
+                                            <h3 className="text-lg md:text-xl font-semibold line-clamp-1">{card.title}</h3>
+                                            <p className="text-xs md:text-sm opacity-80 mb-3 truncate">
                                                 {card.location}
                                             </p>
 
                                             <div className="flex items-end gap-2">
-                                                <span className="text-2xl font-semibold text-white font-gilroy-semibold">
+                                                <span className="text-xl md:text-2xl font-semibold text-white font-gilroy-semibold">
                                                     <span className="text-orange-400">₹</span> {card.price}
                                                 </span>
-                                                <span className="text-sm line-through opacity-60">
+                                                <span className="text-xs md:text-sm line-through opacity-60">
                                                     {card.oldPrice}
                                                 </span>
-                                                <span className="text-sm">Per Person</span>
+                                                <span className="text-xs md:text-sm">Per Person</span>
                                             </div>
-                                            <p className="text-xs opacity-70 mt-1">Includes taxes</p>
+                                            <p className="text-[10px] md:text-xs opacity-70 mt-1">Includes taxes</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -151,12 +152,12 @@ export default function BestPackages() {
                         </Swiper>
 
                         {/* Arrow */}
-                        <button className="deals-next absolute right-[-20px] top-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
-                            <ArrowRight className="text-white" />
+                        <button className="deals-next absolute md:right-[-20px] right-[-10px] top-1/2 -translate-y-1/2  md:w-12 md:h-12 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
+                            <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
-                    <div className="flex justify-center mt-8">
-                        <Button className="bg-primary-orange text-sm">Explore More</Button>
+                    <div className="flex justify-center mt-6 md:mt-8">
+                        <Button className="bg-primary-orange text-sm w-auto">Explore More</Button>
                     </div>
                 </div>
             </div>

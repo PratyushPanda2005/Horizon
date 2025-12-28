@@ -63,18 +63,18 @@ const cards = [
 export default function ExclusiveDeals() {
     return (
         <section className="w-full py-16">
-            <div className="max-w-7xl mx-auto px-8">
-                <h2 className="text-4xl font-gilroy-semibold text-center mb-8">
+            <div className="max-w-7xl mx-auto pl-4 md:px-8">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-8">
                     Exclusive Deals & Offers
                 </h2>
 
                 {/* Tabs */}
-                <Card className="bg-white p-4 shadow-none border-none max-w-6xl w-full mx-auto">
+                <Card className="bg-white p-2 md:p-4 shadow-none border-none max-w-6xl w-full mx-auto max-md:rounded-r-none gap-4">
                     <div className="flex justify-between overflow-x-auto">
                         {tabs.map((tab, i) => (
                             <button
                                 key={tab}
-                                className={`whitespace-nowrap px-6 py-4 rounded-lg text-base font-gilroy-semibold ${i === 0
+                                className={`whitespace-nowrap md:px-6 md:py-4 px-4 py-2 rounded-lg text-sm md:text-base font-gilroy-semibold ${i === 0
                                     ? "bg-orange-100 text-orange-600"
                                     : "text-gray-700"
                                     }`}
@@ -88,20 +88,20 @@ export default function ExclusiveDeals() {
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
-                            spaceBetween={16}
+
                             slidesPerView={3}
                             navigation={{
                                 nextEl: ".deals-next",
                             }}
                             breakpoints={{
-                                0: { slidesPerView: 1.1 },
-                                768: { slidesPerView: 2 },
-                                1024: { slidesPerView: 3 },
+                                0: { slidesPerView: 1.1, spaceBetween: 8 },
+                                768: { slidesPerView: 2, spaceBetween: 16 },
+                                1024: { slidesPerView: 3, spaceBetween: 16 },
                             }}
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative h-[420px] rounded-2xl overflow-hidden">
+                                    <div className="relative md:h-[420px] h-[320px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -142,7 +142,7 @@ export default function ExclusiveDeals() {
                         </Swiper>
 
                         {/* Arrow */}
-                        <button className="deals-next absolute right-[-20px] top-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
+                        <button className="deals-next max-md:hidden absolute right-[-20px] top-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
                             <ArrowRight className="text-white" />
                         </button>
                     </div>

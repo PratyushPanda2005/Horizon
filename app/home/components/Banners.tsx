@@ -59,7 +59,7 @@ const slides = [
 
 export default function HeroBanner() {
     return (
-        <section className="w-full py-14 px-8">
+        <section className="w-full py-12 px-4 md:px-8">
             <div className="max-w-6xl mx-auto ">
                 <Swiper
                     modules={[Autoplay, Pagination]}
@@ -86,11 +86,11 @@ export default function HeroBanner() {
 
                                 {/* Content */}
                                 <div className="relative z-10 h-full flex items-end">
-                                    <div className="p-10 text-white max-w-md">
-                                        <p className="tracking-widest text-base font-gilroy-semibold">
+                                    <div className="md:p-10 p-4 pb-10 text-white max-w-md">
+                                        <p className="tracking-widest text-sm md:text-base font-gilroy-semibold">
                                             {slide.title}
                                         </p>
-                                        <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-4">
+                                        <h2 className="text-2xl md:text-4xl font-gilroy-semibold mb-4">
                                             {slide.offer}
                                         </h2>
                                         <Button className="bg-orange-500 hover:bg-orange-600 transition-colors text-white px-6 py-3 rounded-lg text-sm font-gilroy-medium">

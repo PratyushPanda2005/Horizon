@@ -24,7 +24,7 @@ export default function SearchBar() {
     const [addFlight, setAddFlight] = useState(false)
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-6">
+        <div className="w-full max-w-6xl mx-auto px-6 ">
             {/* Tabs */}
             <div className="flex justify-between gap-2 overflow-x-auto">
                 {tabs.map(({ label, icon: Icon }) => (

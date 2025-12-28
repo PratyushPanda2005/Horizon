@@ -29,11 +29,11 @@ export default function FAQ() {
 
     return (
         <section className="py-12">
-            <div className="max-w-4xl mx-auto px-4 text-center">
-                <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-3">
+            <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-[#16242A] mb-3">
                     Frequently Asked Questions
                 </h2>
-                <p className="text-base font-gilroy-medium text-slate-600 mb-14">
+                <p className="text-sm md:text-base font-gilroy-medium text-slate-600 mb-14">
                     Have any questions? Find all your answers in the frequently asked questions.
                 </p>
 

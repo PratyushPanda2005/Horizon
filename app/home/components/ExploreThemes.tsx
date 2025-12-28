@@ -41,14 +41,14 @@ const themes = [
 
 export default function ExploreThemes() {
     return (
-        <section className="w-full py-16 px-8">
+        <section className="w-full py-16 px-4 md:px-8">
             <div className="max-w-7xl mx-auto ">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-4xl font-gilroy-semibold mb-3">
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">
                         Explore Our Themes
                     </h2>
-                    <p className="text-base text-gray-500 font-gilroy-medium">
+                    <p className="text-sm md:text-base text-gray-500 font-gilroy-medium">
                         Choose from various themes that are hand curated
                     </p>
                 </div>
@@ -57,14 +57,12 @@ export default function ExploreThemes() {
                     <div className="relative">
                         <Swiper
                             modules={[Navigation]}
-                            spaceBetween={20}
-                            // slidesPerView={5}
                             navigation={{ nextEl: ".themes-next" }}
                             breakpoints={{
-                                0: { slidesPerView: 1.2 },
-                                640: { slidesPerView: 2.2 },
-                                1024: { slidesPerView: 4.2 },
-                                1280: { slidesPerView: 4.2 },
+                                0: { slidesPerView: 1.2, spaceBetween: 8 },
+                                640: { slidesPerView: 2.2, spaceBetween: 16 },
+                                1024: { slidesPerView: 4.2, spaceBetween: 20 },
+                                1280: { slidesPerView: 4.2, spaceBetween: 20 },
                             }}
                         >
                             {themes.map((theme, idx) => (
@@ -91,7 +89,7 @@ export default function ExploreThemes() {
                         </Swiper>
 
                         {/* Arrow */}
-                        <button className="themes-next absolute right-[-20px] top-[140px] w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
+                        <button className="themes-next absolute right-[-20px] top-[140px] w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10 max-md:hidden">
                             <ArrowRight className="text-white" />
                         </button>
                     </div>

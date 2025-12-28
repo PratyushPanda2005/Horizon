@@ -33,41 +33,41 @@ const blogs = {
 
 export default function PhoenixFlyBlogs() {
     return (
-        <section className="py-20  px-8">
+        <section className="py-10 px-4 md:py-20 md:px-8">
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
-                <div className="text-center mb-14">
-                    <h2 className="text-4xl font-gilroy-semibold text-gray-900">
+                <div className="text-center mb-10 md:mb-14">
+                    <h2 className="text-2xl md:text-4xl font-gilroy-semibold text-gray-900">
                         Phoenix Fly Blogs
                     </h2>
-                    <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    <p className="mt-4 text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
                         Get travel tips, destination guides, and real stories from explorers
                         around the globe
                     </p>
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
                     {/* Featured Blog */}
-                    <div className="relative rounded-3xl overflow-hidden md:row-span-1">
+                    <div className="relative rounded-3xl overflow-hidden h-96 lg:h-auto group cursor-pointer">
                         <img
                             src={blogs.featured.image}
                             alt={blogs.featured.title}
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
 
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
-                        <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
-                            <h3 className="text-2xl font-gilroy-semibold mb-3">
+                        <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8 text-white">
+                            <h3 className="text-xl md:text-2xl font-gilroy-semibold mb-3">
                                 {blogs.featured.title}
                             </h3>
 
-                            <p className="text-sm opacity-90 max-w-xs mb-6 leading-relaxed">
+                            <p className="text-sm opacity-90 max-w-xs mb-6 leading-relaxed line-clamp-2 md:line-clamp-none">
                                 {blogs.featured.desc}
                             </p>
 
-                            <div className="flex items-center justify-between">
+                            <div className="flex flex-wrap items-center justify-between gap-4">
                                 <div className="flex items-center gap-3 text-sm">
                                     <span>{blogs.featured.date}</span>
                                     <span className="w-1 h-1 bg-white/60 rounded-full" />
@@ -75,6 +75,7 @@ export default function PhoenixFlyBlogs() {
                                         <img
                                             src={blogs.featured.authorImage}
                                             className="w-6 h-6 rounded-full"
+                                            alt={blogs.featured.author}
                                         />
                                         <span>{blogs.featured.author}</span>
                                     </div>
@@ -88,41 +89,42 @@ export default function PhoenixFlyBlogs() {
                     </div>
 
                     {/* Right List */}
-                    <div className="flex flex-col gap-6 ">
+                    <div className="flex flex-col gap-4 md:gap-6">
                         {blogs.list.map((blog, idx) => (
                             <div
                                 key={idx}
-                                className="bg-white rounded-2xl p-4 flex gap-5 md:row-span-1"
+                                className="bg-white rounded-2xl p-4 flex flex-col sm:flex-row gap-5 shadow-sm hover:shadow-md transition-shadow"
                             >
                                 <img
                                     src={blog.image}
                                     alt={blog.title}
-                                    className="w-56 rounded-xl object-cover"
+                                    className="w-full sm:w-48 md:w-56 h-48 sm:h-auto rounded-xl object-cover shrink-0"
                                 />
 
-                                <div className="flex flex-col justify-between">
+                                <div className="flex flex-col justify-between flex-1">
                                     <div>
                                         <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
                                             <span>{blog.date}</span>
                                             <div className="flex items-center gap-2">
                                                 <img
                                                     src={blog.authorImage}
-                                                    className="w-5 h-5 rounded-full "
+                                                    className="w-5 h-5 rounded-full"
+                                                    alt={blog.author}
                                                 />
                                                 <span>{blog.author}</span>
                                             </div>
                                         </div>
 
-                                        <h4 className="text-lg font-gilroy-semibold text-gray-900 mb-2">
+                                        <h4 className="text-lg font-gilroy-semibold text-gray-900 mb-2 line-clamp-2">
                                             {blog.title}
                                         </h4>
 
-                                        <p className="text-sm text-gray-600 leading-relaxed">
+                                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
                                             {blog.excerpt}
                                         </p>
                                     </div>
 
-                                    <button className="text-orange-500 text-sm font-medium mt-3 self-start">
+                                    <button className="text-orange-500 text-sm font-medium mt-3 self-start hover:text-orange-600">
                                         Read More
                                     </button>
                                 </div>
@@ -132,7 +134,7 @@ export default function PhoenixFlyBlogs() {
                 </div>
 
                 {/* View All */}
-                <div className="flex justify-center mt-14">
+                <div className="flex justify-center mt-10 md:mt-14">
                     <button className="bg-orange-500 hover:bg-orange-600 transition text-white px-10 py-3 rounded-xl text-sm font-medium">
                         View All
                     </button>

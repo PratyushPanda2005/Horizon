@@ -15,7 +15,7 @@ import Partners from './components/Partners'
 import Gallery from './components/Gallery'
 import FAQ from '../common/FAQ'
 import ExploreTheWorld from './components/ExploreTheWorld'
-
+import SearchBarMob from './components/SearchBarMob'
 
 const slides = [
     {
@@ -43,6 +43,7 @@ const HomePage = () => {
     return (
         <section>
             <Hero />
+            <SearchBarMob />
             <ExclusiveDeals />
             <HeroBanner />
             <ExploreThemes />

@@ -63,17 +63,17 @@ const cards = [
 
 export default function Hotels() {
     return (
-        <section className="w-full py-16">
-            <div className="max-w-7xl mx-auto px-8">
-                <h2 className="text-4xl font-gilroy-semibold text-center mb-3">
+        <section className="w-full py-12">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3">
                     Top Budget-Friendly Hotels
                 </h2>
-                <p className="text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                <p className="md:text-base text-sm text-gray-500 font-gilroy-medium text-center mb-8">
                     Explore Our Hand-Curated Selection of Budget Hotels Offering Unbeatable Value and Comfort
                 </p>
 
                 {/* Tabs */}
-                <div className="bg-none p-4 shadow-none border-none max-w-6xl w-full mx-auto">
+                <div className="bg-none shadow-none border-none max-w-6xl w-full mx-auto">
 
                     {/* Carousel */}
                     <div className="relative">
@@ -85,7 +85,7 @@ export default function Hotels() {
                                 nextEl: ".deals-next",
                             }}
                             breakpoints={{
-                                0: { slidesPerView: 1.1 },
+                                0: { slidesPerView: 1 },
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 },
                             }}
@@ -147,8 +147,8 @@ export default function Hotels() {
                         </Swiper>
 
                         {/* Arrow */}
-                        <button className="deals-next absolute right-[-20px] top-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
-                            <ArrowRight className="text-white" />
+                        <button className="deals-next absolute md:right-[-20px] right-[-10px] top-1/2 -translate-y-1/2  md:w-12 md:h-12 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
+                            <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
                     <div className="flex justify-center mt-8">

@@ -63,17 +63,17 @@ const cards = [
 
 export default function EarlyBirdOffers() {
     return (
-        <section className="w-full py-16">
-            <div className="max-w-7xl mx-auto px-8">
-                <h2 className="text-4xl font-gilroy-semibold text-center mb-3">
+        <section className="w-full py-12">
+            <div className="max-w-7xl mx-auto md:px-8 px-4">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3">
                     Explore Our Early Bird Offers
                 </h2>
-                <p className="text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                <p className="text-sm md:text-base text-gray-500 font-gilroy-medium text-center mb-8">
                     Grab our early bird offer deals and enjoy your vacation with multiple benefits
                 </p>
 
                 {/* Tabs */}
-                <div className="bg-none p-4 shadow-none border-none max-w-6xl w-full mx-auto">
+                <div className="bg-none p- shadow-none border-none max-w-6xl w-full mx-auto">
 
                     {/* Carousel */}
                     <div className="relative">
@@ -85,14 +85,14 @@ export default function EarlyBirdOffers() {
                                 nextEl: ".deals-next",
                             }}
                             breakpoints={{
-                                0: { slidesPerView: 1.1 },
+                                0: { slidesPerView: 1 },
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 },
                             }}
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative h-[420px] rounded-2xl overflow-hidden">
+                                    <div className="relative h-[320px] md:h-[420px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -111,7 +111,7 @@ export default function EarlyBirdOffers() {
                                                 {card.type}
                                                 {card.meta && <span className="ml-2">{card.meta}</span>}
                                             </span>
-                                            <h3 className="text-xl font-semibold">{card.title}</h3>
+                                            <h3 className="text-lg md:text-xl font-semibold">{card.title}</h3>
                                             <p className="text-sm opacity-80 mb-3">
                                                 {card.location}
                                             </p>
@@ -133,8 +133,8 @@ export default function EarlyBirdOffers() {
                         </Swiper>
 
                         {/* Arrow */}
-                        <button className="deals-next absolute right-[-20px] top-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
-                            <ArrowRight className="text-white" />
+                        <button className="deals-next absolute md:right-[-20px] right-[-10px] top-1/2 -translate-y-1/2  md:w-12 md:h-12 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10">
+                            <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
                     <div className="flex justify-center mt-8">

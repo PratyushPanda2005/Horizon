@@ -12,15 +12,15 @@ import {
 
 export default function CustomizeBooking() {
     return (
-        <section className="w-full px-8 py-20">
+        <section className="w-full md:px-8 px-4 py-12">
             <div className="max-w-6xl mx-auto">
 
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-4xl font-gilroy-semibold text-gray-900 mb-3">
+                    <h2 className="md:text-4xl text-3xl font-gilroy-semibold text-gray-900 mb-3">
                         Customize Your Booking
                     </h2>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 md:text-base text-sm font-gilroy-medium">
                         Customize every aspect of your journey to fit your budget,
                         schedule, and group dynamics.
                     </p>
@@ -30,27 +30,24 @@ export default function CustomizeBooking() {
                 <div className="grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden bg-white shadow-sm">
 
                     {/* Left Gradient Panel */}
-                    <div className="p-12 bg-gradient-to-br from-[#FFD9BD] to-[#B3E5F1]">
-                        <h3 className="text-4xl font-gilroy-semibold text-gray-900 leading-tight mb-6">
-                            Let Our Experts <br />
-                            Tailor A{" "}
+                    <div className="md:p-12 p-6 bg-gradient-to-br from-[#FFD9BD] to-[#B3E5F1]">
+                        <h3 className="md:text-4xl text-3xl font-gilroy-semibold text-gray-900 leading-tight mb-6 text-center md:text-left">
+                            Let Our Experts Tailor A{" "}
                             <span className="text-orange-500">Customized Package</span>
-                            <br />
-                            That Caters To <br />
-                            Your Preferences
+                            That Caters To Your Preferences
                         </h3>
 
-                        <button className="flex items-center gap-2 text-gray-800 font-gilroy-medium hover:gap-3 transition-all">
+                        <button className="flex items-center gap-2 text-gray-800 font-gilroy-medium hover:gap-3 transition-all md:text-base text-sm text-center md:text-left">
                             Make Your Custom Itinerary Now!
                             <ArrowRight className="h-4 w-4" />
                         </button>
                     </div>
 
                     {/* Right Content */}
-                    <div className="p-12 py-16 flex flex-col justify-between">
+                    <div className="p-10 md:p-12 md:py-16 flex flex-col justify-between">
 
                         {/* Features */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">
+                        <div className="grid grid-cols-2 gap-6 md:gap-10 mb-10">
 
                             <Feature
                                 icon={<Layers />}
@@ -78,16 +75,15 @@ export default function CustomizeBooking() {
                         </div>
 
                         {/* CTA */}
-                        <div className="flex gap-4 font-gilroy-medium  mt-10">
-                            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 rounded-lg w-1/2">
+                        <div className="flex flex-col md:flex-row gap-4 font-gilroy-medium  mt-10">
+                            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 rounded-lg w-full md:w-1/2">
                                 Customize Now
                             </Button>
 
-                            <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 rounded-lg flex items-center gap-2 w-1/2">
+                            <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-6 rounded-lg flex items-center gap-2 w-full md:w-1/2">
                                 Whatsapp Us
                             </Button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -108,7 +104,7 @@ function Feature({ icon, title, desc }: FeatureProps) {
             <div className="mb-3 text-orange-500">
                 {icon}
             </div>
-            <h4 className="font-gilroy-semibold text-gray-900 mb-1">
+            <h4 className="font-gilroy-semibold text-gray-900 mb-1 text-center">
                 {title}
             </h4>
             <p className="text-sm text-gray-600 leading-relaxed text-center">
