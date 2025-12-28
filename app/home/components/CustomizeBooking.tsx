@@ -30,7 +30,7 @@ export default function CustomizeBooking() {
                 <div className="grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden bg-white shadow-sm">
 
                     {/* Left Gradient Panel */}
-                    <div className="md:p-12 p-6 bg-gradient-to-br from-[#FFD9BD] to-[#B3E5F1]">
+                    <div className="md:p-12 p-8 bg-gradient-to-br from-[#FFD9BD] to-[#B3E5F1]">
                         <h3 className="md:text-4xl text-3xl font-gilroy-semibold text-gray-900 leading-tight mb-6 text-center md:text-left">
                             Let Our Experts Tailor A{" "}
                             <span className="text-orange-500">Customized Package</span>
