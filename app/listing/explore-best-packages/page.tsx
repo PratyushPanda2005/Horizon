@@ -27,30 +27,27 @@ export default function ExploreBestPackages() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
                         <VerticalPackageCard
                             image="/home/card1.png"
-                            title="Amazing Holiday in Kullu, Manali & Shimla"
-                            location="Himachal Pradesh"
-                            price="22,999"
-                            oldPrice="28,999"
-                            type="Package"
-                            meta="6N/7D"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
                         <VerticalPackageCard
-                            image="/home/card2.png"
-                            title="Diverse Landscape of Spiti Valley"
-                            location="Spiti Valley"
-                            price="18,999"
-                            oldPrice="24,999"
-                            type="Package"
-                            meta="5N/6D"
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
                         <VerticalPackageCard
-                            image="/home/card3.png"
-                            title="Majestic Mountains of Ladakh"
-                            location="Ladakh"
-                            price="32,999"
-                            oldPrice="38,999"
-                            type="Package"
-                            meta="7N/8D"
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
 
                         <VerticalPackageCard
@@ -59,47 +56,43 @@ export default function ExploreBestPackages() {
                             location="Kerala"
                             price="25,999"
                             oldPrice="30,999"
-                            type="Package"
-                            meta="4N/5D"
-                        />
-                        <VerticalPackageCard
-                            image="/home/card2.png"
-                            title="Sunny Beaches of Goa"
-                            location="Goa"
-                            price="15,999"
-                            oldPrice="20,999"
-                            type="Package"
-                            meta="3N/4D"
+                            duration="4N/5D"
                         />
 
                         <VerticalPackageCard
-                            image="/home/card2.png"
-                            title="Sunny Beaches of Goa"
-                            location="Goa"
-                            price="15,999"
-                            oldPrice="20,999"
-                            type="Package"
-                            meta="3N/4D"
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
 
                         <VerticalPackageCard
-                            image="/home/card2.png"
-                            title="Sunny Beaches of Goa"
-                            location="Goa"
-                            price="15,999"
-                            oldPrice="20,999"
-                            type="Package"
-                            meta="3N/4D"
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
 
                         <VerticalPackageCard
-                            image="/home/card2.png"
-                            title="Sunny Beaches of Goa"
-                            location="Goa"
-                            price="15,999"
-                            oldPrice="20,999"
-                            type="Package"
-                            meta="3N/4D"
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
+                        />
+
+                        <VerticalPackageCard
+                            image="/home/card1.png"
+                            title="Romantic Getaway to Kerala"
+                            location="Kerala"
+                            price="25,999"
+                            oldPrice="30,999"
+                            duration="4N/5D"
                         />
                     </div>
                 </section>
