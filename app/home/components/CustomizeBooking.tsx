@@ -17,10 +17,10 @@ export default function CustomizeBooking() {
 
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="md:text-4xl text-3xl font-gilroy-semibold text-gray-900 mb-3">
+                    <h2 className="md:text-4xl text-3xl font-gilroy-semibold title-heading mb-3">
                         Customize Your Booking
                     </h2>
-                    <p className="text-gray-600 md:text-base text-sm font-gilroy-medium">
+                    <p className="md:text-base text-sm font-gilroy-medium sub-title">
                         Customize every aspect of your journey to fit your budget,
                         schedule, and group dynamics.
                     </p>
@@ -31,7 +31,7 @@ export default function CustomizeBooking() {
 
                     {/* Left Gradient Panel */}
                     <div className="md:p-12 p-8 bg-gradient-to-br from-[#FFD9BD] to-[#B3E5F1]">
-                        <h3 className="md:text-4xl text-3xl font-gilroy-semibold text-gray-900 leading-tight mb-6 text-center md:text-left">
+                        <h3 className="md:text-4xl text-3xl font-gilroy-semibold title-heading leading-tight mb-6 text-center md:text-left">
                             Let Our Experts Tailor A{" "}
                             <span className="text-orange-500">Customized Package</span>
                             That Caters To Your Preferences
@@ -44,7 +44,7 @@ export default function CustomizeBooking() {
                     </div>
 
                     {/* Right Content */}
-                    <div className="p-10 md:p-12 md:py-16 flex flex-col justify-between">
+                    <div className="p-6 md:p-12 md:py-16 flex flex-col justify-between">
 
                         {/* Features */}
                         <div className="grid grid-cols-2 gap-6 md:gap-10 mb-10">
@@ -75,7 +75,7 @@ export default function CustomizeBooking() {
                         </div>
 
                         {/* CTA */}
-                        <div className="flex flex-col md:flex-row gap-4 font-gilroy-medium  mt-10">
+                        <div className="flex flex-col md:flex-row gap-4 font-gilroy-medium  md:mt-10">
                             <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 rounded-lg w-full md:w-1/2">
                                 Customize Now
                             </Button>

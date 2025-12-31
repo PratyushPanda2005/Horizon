@@ -35,6 +35,11 @@ const Hero = () => {
                     Search here
                 </Button>
             </div>
+            <img
+                src="/home/Home.svg"
+                alt="Home"
+                className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50"
+            />
         </section>
     )
 }

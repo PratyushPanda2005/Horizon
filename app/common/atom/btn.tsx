@@ -17,7 +17,7 @@ export function CenteredCTA({
         <div className={`flex justify-center mt-8 ${className}`}>
             <Button
                 onClick={onClick}
-                className={`bg-primary-orange text-sm btn-text py-5 px-6 ${buttonClassName}`}
+                className={`bg-primary-orange text-sm btn-text py-6 px-8 ${buttonClassName}`}
             >
                 {label}
             </Button>

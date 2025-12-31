@@ -1,5 +1,7 @@
 "use client"
 
+import { CenteredCTA } from "@/app/common/atom/btn"
+
 const blogs = {
     featured: {
         image: "/home/flora-hon-Agqkvme-v-w-unsplash.png",
@@ -37,10 +39,10 @@ export default function PhoenixFlyBlogs() {
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-10 md:mb-14">
-                    <h2 className="text-2xl md:text-4xl font-gilroy-semibold text-gray-900">
+                    <h2 className="md:text-4xl font-gilroy-semibold title-heading">
                         Phoenix Fly Blogs
                     </h2>
-                    <p className="mt-4 text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+                    <p className="mt-4 text-sm md:text-base sub-title max-w-2xl mx-auto">
                         Get travel tips, destination guides, and real stories from explorers
                         around the globe
                     </p>
@@ -49,7 +51,7 @@ export default function PhoenixFlyBlogs() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
                     {/* Featured Blog */}
-                    <div className="relative rounded-3xl overflow-hidden h-96 lg:h-auto group cursor-pointer">
+                    <div className="relative rounded-3xl overflow-hidden h-[515px] lg:h-auto group cursor-pointer">
                         <img
                             src={blogs.featured.image}
                             alt={blogs.featured.title}
@@ -63,7 +65,7 @@ export default function PhoenixFlyBlogs() {
                                 {blogs.featured.title}
                             </h3>
 
-                            <p className="text-sm opacity-90 max-w-xs mb-6 leading-relaxed line-clamp-2 md:line-clamp-none">
+                            <p className="text-sm opacity-90 max-w-xs mb-6 leading-relaxed sub-title text-white">
                                 {blogs.featured.desc}
                             </p>
 
@@ -101,7 +103,7 @@ export default function PhoenixFlyBlogs() {
                                     className="w-full sm:w-48 md:w-56 h-48 sm:h-auto rounded-xl object-cover shrink-0"
                                 />
 
-                                <div className="flex flex-col justify-between flex-1">
+                                <div className="flex flex-col justify-between flex-1 font-gilroy-medium">
                                     <div>
                                         <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
                                             <span>{blog.date}</span>
@@ -115,16 +117,16 @@ export default function PhoenixFlyBlogs() {
                                             </div>
                                         </div>
 
-                                        <h4 className="text-lg font-gilroy-semibold text-gray-900 mb-2 line-clamp-2">
+                                        <h4 className="text-lg font-gilroy-semibold text-gray-900 mb-2 sub-title">
                                             {blog.title}
                                         </h4>
 
-                                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
+                                        <p className="text-sm text-gray-600 leading-relaxed sub-title">
                                             {blog.excerpt}
                                         </p>
                                     </div>
 
-                                    <button className="text-orange-500 text-sm font-medium mt-3 self-start hover:text-orange-600">
+                                    <button className="text-primary-orange text-sm font-medium mt-3 self-start hover:text-orange-600">
                                         Read More
                                     </button>
                                 </div>
@@ -134,11 +136,7 @@ export default function PhoenixFlyBlogs() {
                 </div>
 
                 {/* View All */}
-                <div className="flex justify-center mt-10 md:mt-14">
-                    <button className="bg-orange-500 hover:bg-orange-600 transition text-white px-10 py-3 rounded-xl text-sm font-medium">
-                        View All
-                    </button>
-                </div>
+                <CenteredCTA label="View All" />
             </div>
         </section>
     )
