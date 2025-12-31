@@ -2,7 +2,7 @@ import React from 'react'
 
 const WeOfferBest = () => {
     return (
-        <section className='px-8 min-h-screen' style={{ backgroundImage: "url('/home/offer-bg.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <section className='px-8 min-h-screen py-12' style={{ backgroundImage: "url('/home/offer-bg.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="max-w-7xl mx-auto ">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">

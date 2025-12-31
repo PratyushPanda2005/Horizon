@@ -22,7 +22,7 @@ const Hero = () => {
                 <h3 className="text-base md:text-xl font-gilroy-semibold text-white mb-2 md:mb-4 text-center">
                     One Adventure At A Time
                 </h3>
-                <h1 className="text-6xl md:text-7xl lg:text-9xl font-gilroy-bold uppercase text-white lg:tracking-[-8px] text-center">
+                <h1 className="text-7xl md:text-9xl lg:text-[180px] font-gilroy-bold uppercase text-white tracking-[-0.06em] leading-[1] text-center">
                     Discover
                 </h1>
 
@@ -31,7 +31,7 @@ const Hero = () => {
                     <SearchBar />
                 </div>
 
-                <Button className="mt-4 md:hidden bg-black/60 rounded-3xl">
+                <Button className="mt-4 md:hidden bg-black/60 rounded-3xl btn-text">
                     Search here
                 </Button>
             </div>

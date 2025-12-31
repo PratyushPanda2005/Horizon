@@ -31,11 +31,11 @@ export default function HeroSlider({
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3 title-heading">
                         {heading}
                     </h2>
                     {subheading && (
-                        <p className="text-sm md:text-base text-gray-500 font-gilroy-medium">
+                        <p className="text-sm md:text-base font-gilroy-medium sub-title">
                             {subheading}
                         </p>
                     )}
@@ -54,7 +54,7 @@ export default function HeroSlider({
                 >
                     {slides.map((slide, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="relative h-[360px]">
+                            <div className="relative h-[335px] md:h-[360px]">
                                 {/* Background */}
                                 <img
                                     src={slide.image}
@@ -71,7 +71,7 @@ export default function HeroSlider({
                                         <h2 className="text-2xl md:text-4xl font-gilroy-semibold">
                                             {slide.title}
                                         </h2>
-                                        <p className="tracking-widest md:text-base text-xs font-gilroy-medium mb-4">
+                                        <p className="md:text-base text-xs font-gilroy-medium mb-4">
                                             {slide.offer}
                                         </p>
                                         <Button className="bg-orange-500 hover:bg-orange-600 transition-colors text-white px-6 py-3 rounded-lg text-sm font-gilroy-medium">

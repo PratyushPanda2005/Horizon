@@ -1,13 +1,13 @@
 
 const HowItWorks = () => {
     return (
-        <section className="w-full py-16 px-8">
+        <section className="w-full py-12 px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3 title-heading">
                         How It Works
                     </h2>
-                    <p className="text-sm md:text-base text-gray-500 font-gilroy-medium">
+                    <p className="text-sm md:text-base font-gilroy-medium sub-title">
                         Customize and book your travel in 3 simple steps
                     </p>
                 </div>

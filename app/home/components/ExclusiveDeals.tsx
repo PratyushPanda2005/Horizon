@@ -6,6 +6,8 @@ import "swiper/css"
 import "swiper/css/navigation"
 import { ArrowRight, Timer } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { CenteredCTA } from "@/app/common/atom/btn"
 
 const tabs = [
     "Deals",
@@ -62,20 +64,20 @@ const cards = [
 
 export default function ExclusiveDeals() {
     return (
-        <section className="w-full py-16">
+        <section className="w-full py-12">
             <div className="max-w-7xl mx-auto pl-4 md:px-8">
-                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-8 mob-title-heading mr-4">
                     Exclusive Deals & Offers
                 </h2>
 
                 {/* Tabs */}
-                <Card className="bg-white p-2 md:p-4 shadow-none border-none max-w-6xl w-full mx-auto max-md:rounded-r-none gap-4">
+                <Card className="bg-white pl-2 pt-2 pb-2 md:p-4 shadow-none border-none max-w-6xl w-full mx-auto max-md:rounded-r-none gap-2 md:gap-4">
                     <div className="flex justify-between overflow-x-auto">
                         {tabs.map((tab, i) => (
                             <button
                                 key={tab}
-                                className={`whitespace-nowrap md:px-6 md:py-4 px-4 py-2 rounded-lg text-sm md:text-base font-gilroy-semibold ${i === 0
-                                    ? "bg-orange-100 text-orange-600"
+                                className={`whitespace-nowrap md:px-6 md:py-4 px-4 py-2 rounded-lg text-base tracking-[-0.04em] font-gilroy-semibold ${i === 0
+                                    ? "bg-orange-100 text-primary-orange"
                                     : "text-gray-700"
                                     }`}
                             >
@@ -101,7 +103,7 @@ export default function ExclusiveDeals() {
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative md:h-[420px] h-[320px] rounded-2xl overflow-hidden">
+                                    <div className="relative h-[360px] md:h-[400px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -110,7 +112,7 @@ export default function ExclusiveDeals() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
                                         {/* Timer */}
-                                        <div className="absolute top-4 right-4 flex items-center gap-1 bg-orange-500 text-white text-xs px-4 py-2 rounded-lg">
+                                        <div className="absolute top-4 right-4 flex items-center gap-1 bg-orange-500 text-white text-xs px-4 py-2 rounded-lg font-gilroy-medium">
                                             <span><Timer className="h-[1em] w-[1em]" /></span>{card.timer}
                                         </div>
 
@@ -121,20 +123,19 @@ export default function ExclusiveDeals() {
                                                 {card.meta && <span className="ml-2">{card.meta}</span>}
                                             </span>
                                             <h3 className="text-xl font-semibold">{card.title}</h3>
-                                            <p className="text-sm opacity-80 mb-3">
+                                            <p className="text-sm text-peach mb-3">
                                                 {card.location}
                                             </p>
 
                                             <div className="flex items-end gap-2">
                                                 <span className="text-2xl font-semibold text-white font-gilroy-semibold">
-                                                    <span className="text-orange-400">₹</span> {card.price}
+                                                    <span className="text-primary-orange">₹</span> {card.price}
                                                 </span>
-                                                <span className="text-sm line-through opacity-60">
-                                                    {card.oldPrice}
+                                                <span className="text-sm text-peach">
+                                                    <span className="line-through">{card.oldPrice}</span> Per Person
                                                 </span>
-                                                <span className="text-sm">Per Person</span>
                                             </div>
-                                            <p className="text-xs opacity-70 mt-1">Includes taxes</p>
+                                            <p className="text-xs text-peach mt-1">Includes taxes</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -147,6 +148,8 @@ export default function ExclusiveDeals() {
                         </button>
                     </div>
                 </Card>
+
+                <CenteredCTA label="Explore More" />
             </div>
         </section>
     )

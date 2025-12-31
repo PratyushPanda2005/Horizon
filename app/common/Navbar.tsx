@@ -187,14 +187,18 @@ export default function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <div className="fixed top-4 right-4 z-50 md:hidden">
-                    <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-text p-2">
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="p-2"
+                    >
                         {isMobileMenuOpen ? (
-                            <X className="h-6 w-6 relative z-50 text-black" />
+                            <X className="h-6 w-6 text-black" />
                         ) : (
-                            <Menu className="h-6 w-6 text-text" />
+                            <HamburgerIcon />
                         )}
                     </button>
                 </div>
+
 
                 {/* Mobile Menu Overlay */}
                 {isMobileMenuOpen && (
@@ -286,13 +290,13 @@ export default function Navbar() {
     )
 }
 
-function NavItem({ label }: { label: string }) {
+function HamburgerIcon() {
     return (
-        <NavigationMenuItem>
-            <div className="flex cursor-pointer items-center gap-1 text-text hover:text-white transition-colors group">
-                <span className="text-sm font-gilroy-semibold">{label}</span>
-                <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-            </div>
-        </NavigationMenuItem>
-    )
+        <div className="flex flex-col gap-1">
+            <span className="block h-[3px] w-3 rounded-full bg-white" />
+            <span className="block h-[3px] w-6 rounded-full bg-white" />
+            <span className="block h-[3px] w-3 rounded-full bg-white ml-3" />
+        </div>
+    );
 }
+

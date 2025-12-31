@@ -26,14 +26,14 @@ export default function SearchBar() {
     return (
         <div className="w-full max-w-6xl mx-auto md:hidden">
             {/* Tabs */}
-            <div className="flex justify-between gap-1 overflow-x-auto pl-4">
+            <div className="flex justify-between gap-[2px] overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pl-4">
                 {tabs.map(({ label, icon: Icon }) => (
                     <button
                         key={label}
                         onClick={() => setActiveTab(label)}
-                        className={`flex items-center gap-2 px-6 py-2 text-sm font-medium transition rounded-t-lg font-gilroy-medium ${activeTab === label
+                        className={`flex items-center gap-2 px-6 py-3 text-sm font-medium transition rounded-t-lg font-gilroy-medium ${activeTab === label
                             ? "bg-[#CEDDE7] text-black"
-                            : "text-white/80 hover:bg-black/60 bg-black/70"
+                            : "text-white/80 hover:bg-black/60 bg-black/60"
                             }`}
                     >
                         <Icon className="h-4 w-4" />
@@ -50,7 +50,7 @@ export default function SearchBar() {
                         <FieldBox>
                             <Field label="Leaving From">
                                 <Select>
-                                    <SelectTrigger className="border-none p-0 shadow-none !text-black font-gilroy-medium">
+                                    <SelectTrigger className="border-none w-full p-0 shadow-none !text-black font-gilroy-medium">
                                         <SelectValue placeholder="Select leaving Location" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -64,7 +64,7 @@ export default function SearchBar() {
                         <FieldBox>
                             <Field label="Destination">
                                 <Select>
-                                    <SelectTrigger className="border-none p-0 shadow-none font-gilroy-medium">
+                                    <SelectTrigger className="border-none w-full p-0 shadow-none font-gilroy-medium">
                                         <SelectValue placeholder="Select Destination" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -78,7 +78,7 @@ export default function SearchBar() {
                         <FieldBox>
                             <Field label="Theme">
                                 <Select defaultValue="solo">
-                                    <SelectTrigger className="border-none p-0 shadow-none font-gilroy-medium">
+                                    <SelectTrigger className="border-none w-full p-0 shadow-none font-gilroy-medium">
                                         <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -90,34 +90,37 @@ export default function SearchBar() {
                             </Field>
                         </FieldBox>
 
-                        <FieldBox>
-                            <Field label="From">
-                                <div className="relative">
-                                    <Input
-                                        placeholder="DD-MM"
-                                        className="border-none p-0 shadow-none font-gilroy-medium"
-                                    />
-                                    <CalendarDays className="absolute right-0 top-1 h-4 w-4 text-muted-foreground" />
-                                </div>
-                            </Field>
-                        </FieldBox>
+                        <div className="flex gap-2">
+                            <FieldBox>
+                                <Field label="From">
+                                    <div className="relative">
+                                        <Input
+                                            placeholder="DD-MM"
+                                            className="border-none w-full p-0 shadow-none font-gilroy-medium placeholder:text-black placeholder:text-sm"
+                                        />
+                                        <CalendarDays className="absolute right-0 top-1 h-4 w-4 text-muted-foreground" />
+                                    </div>
+                                </Field>
+                            </FieldBox>
 
-                        <FieldBox>
-                            <Field label="To">
-                                <div className="relative">
-                                    <Input
-                                        placeholder="DD-MM"
-                                        className="border-none p-0 shadow-none font-gilroy-medium"
-                                    />
-                                    <CalendarDays className="absolute right-0 top-1 h-4 w-4 text-muted-foreground" />
-                                </div>
-                            </Field>
-                        </FieldBox>
+                            <FieldBox>
+                                <Field label="To">
+                                    <div className="relative">
+                                        <Input
+                                            placeholder="DD-MM"
+                                            className="border-none w-full p-0 shadow-none font-gilroy-medium placeholder:text-black placeholder:text-sm"
+                                        />
+                                        <CalendarDays className="absolute right-0 top-1 h-4 w-4 text-muted-foreground" />
+                                    </div>
+                                </Field>
+                            </FieldBox>
+                        </div>
+
 
                         <FieldBox>
                             <Field label="Travelers">
                                 <Select defaultValue="2-1">
-                                    <SelectTrigger className="border-none p-0 shadow-none font-gilroy-medium">
+                                    <SelectTrigger className="border-none w-full p-0 shadow-none font-gilroy-medium">
                                         <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -129,8 +132,8 @@ export default function SearchBar() {
                             </Field>
                         </FieldBox>
 
-                        <Button asChild className="h-full rounded-lg bg-slate-800 text-white hover:bg-slate-700">
-                            <Link href="/listing/package-listing">
+                        <Button asChild className="h-full py-4 rounded-lg bg-primary-btn text-white hover:bg-slate-700">
+                            <Link href="/listing/package-listing" className="btn-text">
                                 Search
                             </Link>
                         </Button>

@@ -73,7 +73,7 @@ export default function HeroBanner() {
                 >
                     {slides.map((slide, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="relative h-[360px]">
+                            <div className="relative h-[335px] md:h-[360px]">
                                 {/* Background */}
                                 <img
                                     src={slide.image}
@@ -93,9 +93,7 @@ export default function HeroBanner() {
                                         <h2 className="text-2xl md:text-4xl font-gilroy-semibold mb-4">
                                             {slide.offer}
                                         </h2>
-                                        <Button className="bg-orange-500 hover:bg-orange-600 transition-colors text-white px-6 py-3 rounded-lg text-sm font-gilroy-medium">
-                                            {slide.cta}
-                                        </Button>
+                                        <Button className="bg-primary-orange text-sm btn-text py-5 px-6">{slide.cta}</Button>
                                     </div>
                                 </div>
                             </div>

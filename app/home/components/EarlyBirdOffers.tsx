@@ -4,9 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import { ArrowRight, Timer } from "lucide-react"
+import { Activity, ArrowRight, Car, Hotel, Plane, Timer } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { CenteredCTA } from "@/app/common/atom/btn"
 
 const tabs = [
     "Deals",
@@ -27,7 +28,7 @@ const cards = [
         price: "5,999",
         oldPrice: "12,999",
         image: "/home/card1.png",
-        timer: "Ends in 11h : 32m : 45s",
+        timer: "Early Bird Offer",
     },
     {
         type: "Package",
@@ -36,7 +37,7 @@ const cards = [
         price: "10,999",
         oldPrice: "12,999",
         image: "/home/card2.png",
-        timer: "Ends in 11h : 32m : 45s",
+        timer: "Early Bird Offer",
         meta: "6N/7D",
     },
     {
@@ -46,7 +47,7 @@ const cards = [
         price: "10,999",
         oldPrice: "12,999",
         image: "/home/card3.png",
-        timer: "Ends in 11h : 32m",
+        timer: "Early Bird Offer",
         meta: "6N/7D",
     },
     {
@@ -56,7 +57,7 @@ const cards = [
         price: "10,999",
         oldPrice: "12,999",
         image: "/home/card1.png",
-        timer: "Ends in 11h : 32m",
+        timer: "Early Bird Offer",
         meta: "6N/7D",
     },
 ]
@@ -65,10 +66,10 @@ export default function EarlyBirdOffers() {
     return (
         <section className="w-full py-12">
             <div className="max-w-7xl mx-auto md:px-8 px-4">
-                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3 title-heading">
                     Explore Our Early Bird Offers
                 </h2>
-                <p className="text-sm md:text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                <p className="text-sm md:text-base font-gilroy-medium text-center mb-8 sub-title">
                     Grab our early bird offer deals and enjoy your vacation with multiple benefits
                 </p>
 
@@ -92,7 +93,7 @@ export default function EarlyBirdOffers() {
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative h-[320px] md:h-[420px] rounded-2xl overflow-hidden">
+                                    <div className="relative h-[360px] md:h-[420px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -112,20 +113,27 @@ export default function EarlyBirdOffers() {
                                                 {card.meta && <span className="ml-2">{card.meta}</span>}
                                             </span>
                                             <h3 className="text-lg md:text-xl font-semibold">{card.title}</h3>
-                                            <p className="text-sm opacity-80 mb-3">
+                                            <p className="text-sm text-peach mb-3">
                                                 {card.location}
                                             </p>
 
+                                            {/* Icons row */}
+                                            <div className="flex gap-1 justify-between mb-2">
+                                                <Icon label="2 Flights" icon={<Plane className="text-primary-orange" size={14} />} />
+                                                <Icon label="11 Hotels" icon={<Hotel className="text-primary-orange" size={14} />} />
+                                                <Icon label="5 Activities" icon={<Activity className="text-primary-orange" size={14} />} />
+                                                <Icon label="4 Transfers" icon={<Car className="text-primary-orange" size={14} />} />
+                                            </div>
+
                                             <div className="flex items-end gap-2">
                                                 <span className="text-2xl font-semibold text-white font-gilroy-semibold">
-                                                    <span className="text-orange-400">₹</span> {card.price}
+                                                    <span className="text-primary-orange">₹</span> {card.price}
                                                 </span>
-                                                <span className="text-sm line-through opacity-60">
-                                                    {card.oldPrice}
+                                                <span className="text-sm text-peach">
+                                                    <span className="line-through">{card.oldPrice}</span> Per Person
                                                 </span>
-                                                <span className="text-sm">Per Person</span>
                                             </div>
-                                            <p className="text-xs opacity-70 mt-1">Includes taxes</p>
+                                            <p className="text-xs text-peach mt-1">Includes taxes</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -137,11 +145,24 @@ export default function EarlyBirdOffers() {
                             <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
-                    <div className="flex justify-center mt-8">
-                        <Button className="bg-primary-orange text-sm">Explore More</Button>
-                    </div>
+                    <CenteredCTA label="Explore More" />
                 </div>
             </div>
         </section>
     )
+}
+
+function Icon({
+    icon,
+    label,
+}: {
+    icon: React.ReactNode;
+    label: string;
+}) {
+    return (
+        <span className="flex flex-col items-center gap-1 text-white bg-black/40 backdrop-blur rounded-xl w-full py-3 text-xs">
+            {icon}
+            {label}
+        </span>
+    );
 }

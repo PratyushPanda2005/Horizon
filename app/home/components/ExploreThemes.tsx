@@ -41,14 +41,14 @@ const themes = [
 
 export default function ExploreThemes() {
     return (
-        <section className="w-full py-16 px-4 md:px-8">
+        <section className="w-full py-12 px-4 md:px-8">
             <div className="max-w-7xl mx-auto ">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3">
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3 title-heading">
                         Explore Our Themes
                     </h2>
-                    <p className="text-sm md:text-base text-gray-500 font-gilroy-medium">
+                    <p className="sub-title">
                         Choose from various themes that are hand curated
                     </p>
                 </div>
@@ -59,7 +59,7 @@ export default function ExploreThemes() {
                             modules={[Navigation]}
                             navigation={{ nextEl: ".themes-next" }}
                             breakpoints={{
-                                0: { slidesPerView: 1.2, spaceBetween: 8 },
+                                0: { slidesPerView: 1.2, spaceBetween: 12 },
                                 640: { slidesPerView: 2.2, spaceBetween: 16 },
                                 1024: { slidesPerView: 4.2, spaceBetween: 20 },
                                 1280: { slidesPerView: 4.2, spaceBetween: 20 },
@@ -68,7 +68,7 @@ export default function ExploreThemes() {
                             {themes.map((theme, idx) => (
                                 <SwiperSlide key={idx}>
                                     <div className="flex flex-col">
-                                        <div className="relative h-[300px] rounded-2xl overflow-hidden">
+                                        <div className="relative h-[312px] rounded-2xl overflow-hidden">
                                             <img
                                                 src={theme.image}
                                                 alt={theme.title}

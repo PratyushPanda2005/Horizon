@@ -4,9 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import { ArrowRight, Timer } from "lucide-react"
+import { ArrowRight, Heart, Timer } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { CenteredCTA } from "@/app/common/atom/btn"
 
 const tabs = [
     "Deals",
@@ -63,12 +64,12 @@ const cards = [
 
 export default function BestPackages() {
     return (
-        <section className="w-full py-10 md:py-16">
+        <section className="w-full py-12 md:py-16">
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-gilroy-semibold text-center mb-3">
+                <h2 className="text-3xl lg:text-4xl font-gilroy-semibold text-center mb-3 title-heading">
                     Explore Best Packages
                 </h2>
-                <p className="text-sm md:text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                <p className="text-sm md:text-base font-gilroy-medium text-center mb-8 sub-title">
                     Embark on a mesmerizing journey to explore the top destinations
                 </p>
 
@@ -111,7 +112,7 @@ export default function BestPackages() {
                         >
                             {cards.map((card, idx) => (
                                 <SwiperSlide key={idx}>
-                                    <div className="relative h-[380px] md:h-[420px] rounded-2xl overflow-hidden">
+                                    <div className="relative h-[360px] md:h-[420px] rounded-2xl overflow-hidden">
                                         <img
                                             src={card.image}
                                             alt={card.title}
@@ -120,9 +121,10 @@ export default function BestPackages() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
                                         {/* Timer */}
-                                        <div className="absolute top-4 right-4 flex items-center gap-1 bg-orange-500 text-white text-xs px-3 py-1.5 md:px-4 md:py-2 rounded-lg">
-                                            <span><Timer className="h-[1em] w-[1em]" /></span>{card.timer}
-                                        </div>
+                                        <button className="absolute top-4 right-4 z-10 bg-white/20 backdrop-blur-md p-4 md:p-6 rounded-xl">
+                                            <Heart className="w-6 h-6 text-white" />
+                                        </button>
+
 
                                         {/* Content */}
                                         <div className="absolute bottom-0 p-4 md:p-5 text-white w-full font-gilroy-medium">
@@ -156,9 +158,7 @@ export default function BestPackages() {
                             <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
-                    <div className="flex justify-center mt-6 md:mt-8">
-                        <Button className="bg-primary-orange text-sm w-auto">Explore More</Button>
-                    </div>
+                    <CenteredCTA label="Explore More" />
                 </div>
             </div>
         </section>

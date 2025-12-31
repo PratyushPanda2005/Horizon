@@ -7,6 +7,7 @@ import "swiper/css/navigation"
 import { ArrowRight, Heart, Timer } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { CenteredCTA } from "@/app/common/atom/btn"
 
 const tabs = [
     "Deals",
@@ -65,10 +66,10 @@ export default function Hotels() {
     return (
         <section className="w-full py-12">
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3">
+                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3 title-heading">
                     Top Budget-Friendly Hotels
                 </h2>
-                <p className="md:text-base text-sm text-gray-500 font-gilroy-medium text-center mb-8">
+                <p className="md:text-base text-sm font-gilroy-medium sub-title text-center mb-8">
                     Explore Our Hand-Curated Selection of Budget Hotels Offering Unbeatable Value and Comfort
                 </p>
 
@@ -151,9 +152,7 @@ export default function Hotels() {
                             <ArrowRight className="text-white w-4 h-4 md:w-6 md:h-6" />
                         </button>
                     </div>
-                    <div className="flex justify-center mt-8">
-                        <Button className="bg-primary-orange text-sm">Explore More</Button>
-                    </div>
+                    <CenteredCTA label="Explore More" />
                 </div>
             </div>
         </section>
