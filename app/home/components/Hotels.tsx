@@ -65,13 +65,18 @@ const cards = [
 export default function Hotels() {
     return (
         <section className="w-full py-12">
-            <div className="max-w-7xl mx-auto px-4 md:px-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
                 <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3 title-heading">
                     Top Budget-Friendly Hotels
                 </h2>
                 <p className="md:text-base text-sm font-gilroy-medium sub-title text-center mb-8">
                     Explore Our Hand-Curated Selection of Budget Hotels Offering Unbeatable Value and Comfort
                 </p>
+
+                <div className="absolute inset-0 pointer-events-none 
+  bg-[radial-gradient(circle_at_center,rgba(255,140,0,0.45)_0%,rgba(255,140,0,0.25)_25%,rgba(255,140,0,0.1)_45%,transparent_65%)]" />
+
+
 
                 {/* Tabs */}
                 <div className="bg-none shadow-none border-none max-w-6xl w-full mx-auto">
