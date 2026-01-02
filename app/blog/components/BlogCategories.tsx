@@ -35,15 +35,15 @@ const BlogCategories = () => {
     const nextRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <section className="bg-gray-50 py-20 pt-24 md:pt-32 md:px-8 font-gilroy-medium">
-            <div className="max-w-7xl mx-auto">
+        <section className="py-20 pt-24 md:pt-32 md:px-8 font-gilroy-medium">
+            <div className="max-w-6xl mx-auto">
 
                 {/* Heading */}
-                <div className="text-center mx-auto md:mb-16 mb-10 px-4">
-                    <h1 className="text-3xl md:text-4xl font-gilroy-semibold text-gray-900 mb-4">
+                <div className="text-center mx-auto md:mb-16 mb-10">
+                    <h1 className="text-3xl md:text-4xl font-gilroy-semibold text-text mb-4">
                         Welcome To The Phoenix Fly Blogs
                     </h1>
-                    <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
+                    <p className="text-text text-xs md:text-sm leading-relaxed">
                         Uncover hidden gems, cultural secrets, and unforgettable experiences
                         with the TripJoy Blog. From personal travel tales to expert planning
                         guides, our stories are your passport to inspiring adventures and
@@ -52,8 +52,8 @@ const BlogCategories = () => {
                     </p>
                 </div>
 
-                <div className='flex items-center justify-between mb-8'>
-                    <h2 className="text-lg md:text-2xl font-gilroy-semibold  text-gray-900 px-4 md:px-0">
+                <div className='flex items-center justify-between mb-6'>
+                    <h2 className="text-lg md:text-2xl lg:text-3xl tracking-[-0.02em] font-gilroy-semibold  text-text px-4 md:px-0">
                         Read By Category
                     </h2>
                     {/* Custom Navigation Buttons */}
@@ -123,13 +123,13 @@ const BlogCategories = () => {
                                 <img
                                     src={category.image}
                                     alt={category.title}
-                                    className="w-full h-[260px] object-cover"
+                                    className="w-full h-[247px] object-cover"
                                 />
                             </div>
-                            <h3 className="text-lg font-gilroy-semibold text-gray-900 mb-1">
+                            <h3 className="text-lg font-gilroy-semibold text-text mb-1">
                                 {category.title}
                             </h3>
-                            <p className="text-sm text-gray-600">
+                            <p className="text-sm text-text">
                                 {category.description}
                             </p>
                         </Link>

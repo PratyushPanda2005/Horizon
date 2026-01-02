@@ -4,7 +4,7 @@ import RecentBlogs from './components/RecentBlogs'
 
 const BlogPage = () => {
     return (
-        <main>
+        <main className=''>
             <BlogCategories />
             <RecentBlogs />
         </main>

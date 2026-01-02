@@ -4,12 +4,12 @@ const RecentBlogs = () => {
     const blogs = Array.from({ length: 9 });
 
     return (
-        <section className="bg-gray-50 pb-20 px-4 md:px-8 font-gilroy-medium">
-            <div className="max-w-7xl mx-auto">
+        <section className="pb-20 px-4 md:px-8 font-gilroy-medium">
+            <div className="max-w-6xl mx-auto">
 
                 {/* Header */}
-                <div className="flex flex-col md:flex-row items-center md:justify-between gap-3 md:gap-6 mb-10">
-                    <h2 className="text-lg md:text-2xl font-gilroy-semibold text-gray-900">
+                <div className="flex flex-col md:flex-row items-center md:justify-between gap-3 md:gap-6 mb-6">
+                    <h2 className="text-lg md:text-2xl lg:text-3xl tracking-[-0.02em] font-gilroy-semibold text-text">
                         Recent Blogs
                     </h2>
 
@@ -31,10 +31,10 @@ const RecentBlogs = () => {
                     {blogs.map((_, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-2xl border border-[#EBEBEB] p-4 shadow-none hover:shadow-md transition"
+                            className="bg-white rounded-lg p-4 transition"
                         >
                             {/* Image */}
-                            <div className="rounded-xl overflow-hidden mb-4">
+                            <div className="rounded-lg overflow-hidden mb-4">
                                 <img
                                     src={
                                         i % 3 === 0
@@ -49,8 +49,8 @@ const RecentBlogs = () => {
                             </div>
 
                             {/* Meta */}
-                            <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
-                                <span>09 May 2025</span>
+                            <div className="flex items-center justify-between text-xs text-text mb-2">
+                                <span>1 Day ago</span>
                                 <div className="flex items-center gap-2">
                                     <img
                                         src="https://i.pravatar.cc/40"
@@ -62,12 +62,12 @@ const RecentBlogs = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="font-gilroy-semibold text-gray-900 mb-1">
+                            <h3 className="font-gilroy-semibold text-text mb-1">
                                 Chasing Sunsets In Santorini
                             </h3>
 
                             {/* Description */}
-                            <p className="text-xs text-gray-600 mb-3 leading-relaxed">
+                            <p className="text-xs text-slate-500 mb-1 leading-relaxed line-clamp-1">
                                 Master the art of smart packing with tips for stress-free and Master the art of smart packing with tips for stress-free and Master the art of smart packing with tips for stress-free...
                             </p>
 
