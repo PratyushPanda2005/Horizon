@@ -39,11 +39,11 @@ const BlogCategories = () => {
             <div className="max-w-6xl mx-auto">
 
                 {/* Heading */}
-                <div className="text-center mx-auto md:mb-16 mb-10">
+                <div className="text-center mx-auto md:mb-12 mb-10">
                     <h1 className="text-3xl md:text-4xl font-gilroy-semibold text-text mb-4">
                         Welcome To The Phoenix Fly Blogs
                     </h1>
-                    <p className="text-text text-xs md:text-sm leading-relaxed">
+                    <p className="text-text text-xs md:text-sm leading-[30px]">
                         Uncover hidden gems, cultural secrets, and unforgettable experiences
                         with the TripJoy Blog. From personal travel tales to expert planning
                         guides, our stories are your passport to inspiring adventures and
