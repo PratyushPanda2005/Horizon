@@ -38,7 +38,7 @@ const Hero = () => {
             <img
                 src="/home/Home.svg"
                 alt="Home"
-                className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50"
+                className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 sm:hidden"
             />
         </section>
     )

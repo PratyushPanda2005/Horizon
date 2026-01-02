@@ -1,8 +1,8 @@
 
 const Story = () => {
   return (
-    <section className="w-full px-6 md:px-8 py-12 bg-[#F2F4F6]">
-      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-10 md:flex-row">
+    <section className="w-full px-6 md:px-10 py-12 bg-[#F2F4F6]">
+      <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-10 md:flex-row">
         <div className="w-full md:w-1/2">
           <div className="overflow-hidden rounded-3xl">
             <img

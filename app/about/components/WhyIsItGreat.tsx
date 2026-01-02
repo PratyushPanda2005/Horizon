@@ -28,13 +28,13 @@ const WhyIsItGreat = () => {
 
   return (
     <section className="w-full bg-[#F2F4F6] px-6 md:px-8 py-20">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-5xl">
 
-        <h2 className="mb-16 text-center text-3xl font-gilroy-semibold text-[#16242A] md:text-4xl">
+        <h2 className="mb-16 text-center text-3xl font-gilroy-semibold text-text md:text-4xl">
           Why Is It Great
         </h2>
 
-        <div className="grid gap-y-16 md:gap-y-20 gap-x-4 md:gap-x-12 grid-cols-2 max-w-3xl mx-auto w-full">
+        <div className="grid gap-y-16 md:gap-y-16 gap-x-4 md:gap-x-12 grid-cols-2 max-w-3xl mx-auto w-full">
           {reasons.map((item) => (
             <div
               key={item.title}
@@ -44,11 +44,11 @@ const WhyIsItGreat = () => {
                 <img src={item.icon} alt={item.title} className="h-8 w-8" />
               </div>
 
-              <h3 className="mb-4 text-lg font-gilroy-semibold text-[#16242A]">
+              <h3 className="mb-2 text-lg font-gilroy-semibold text-text">
                 {item.title}
               </h3>
 
-              <p className="max-w-sm text-sm font-gilroy-medium leading-relaxed text-slate-600">
+              <p className="max-w-[310px] text-sm font-gilroy-medium leading-relaxed text-text ">
                 {item.description}
               </p>
             </div>

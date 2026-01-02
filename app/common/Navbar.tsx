@@ -45,8 +45,8 @@ export default function Navbar() {
     // }, [isMobileMenuOpen]);
 
     return (
-        <header className="w-full relative z-50">
-            <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 absolute top-0 left-0 right-0 bg-none z-50 font-gilroy">
+        <header className="w-full relative z-50 px-6 md:px-8">
+            <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 absolute top-0 left-0 right-0 bg-none z-50 font-gilroy">
                 {/* Left */}
                 <div className="flex items-center gap-10">
                     <Link href="/">

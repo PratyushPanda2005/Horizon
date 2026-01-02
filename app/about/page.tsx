@@ -16,7 +16,7 @@ const AboutUsPage = () => {
             <OurValues />
             <WhyIsItGreat />
             <RecognitionByGovernment />
-            <Footer />
+            {/* <Footer /> */}
         </main>
     )
 }

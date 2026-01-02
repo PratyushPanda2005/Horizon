@@ -73,7 +73,7 @@ export default function Hotels() {
                     Explore Our Hand-Curated Selection of Budget Hotels Offering Unbeatable Value and Comfort
                 </p>
 
-                <div className="absolute inset-0 pointer-events-none 
+                <div className="absolute inset-0 pointer-events-none sm:hidden
   bg-[radial-gradient(circle_at_center,rgba(255,140,0,0.45)_0%,rgba(255,140,0,0.25)_25%,rgba(255,140,0,0.1)_45%,transparent_65%)]" />
 
 
