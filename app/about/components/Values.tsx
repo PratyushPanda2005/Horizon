@@ -1,3 +1,5 @@
+import { AnimatedText, LineReveal } from "@/app/utils/animation";
+
 const OurValues = () => {
   const values = [
     {
@@ -32,12 +34,11 @@ const OurValues = () => {
 
         <div className="mb-14 text-center">
           <h2 className="mb-3 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            Our Values
+            <LineReveal text="Our Values" />
           </h2>
-          <p className="mx-auto text-sm font-gilroy-medium text-text md:text-base">
-            We’re dedicated to exceptional experiences through trust, fresh thinking,
-            and a genuine love for travel.
-          </p>
+          <div className="mx-auto text-sm font-gilroy-medium text-text md:text-base">
+            <LineReveal text="We’re dedicated to exceptional experiences through trust, fresh thinking,\nand a genuine love for travel." />
+          </div>
         </div>
 
         <div className="grid gap-2 md:gap-5 grid-cols-2 lg:grid-cols-4">
@@ -51,12 +52,12 @@ const OurValues = () => {
               </div>
 
               <h3 className="mb-2 text-lg font-gilroy-semibold text-text">
-                {item.title}
+                <AnimatedText text={item.title} />
               </h3>
 
-              <p className="text-sm font-gilroy-medium leading-relaxed text-slate-500">
-                {item.description}
-              </p>
+              <div className="text-sm font-gilroy-medium leading-relaxed text-slate-500">
+                <LineReveal text={item.description} />
+              </div>
             </div>
           ))}
         </div>

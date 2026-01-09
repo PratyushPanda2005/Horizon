@@ -1,3 +1,5 @@
+import { AnimatedText, LineReveal } from "@/app/utils/animation";
+
 const Mission = () => {
   const features = [
     {
@@ -42,11 +44,11 @@ const Mission = () => {
 
               <div>
                 <h3 className="mb-1 text-base font-gilroy-semibold text-[#16242A]">
-                  {item.title}
+                  <AnimatedText text={item.title} />
                 </h3>
-                <p className="text-sm font-gilroy-medium text-slate-500">
-                  {item.description}
-                </p>
+                <div className="text-sm font-gilroy-medium text-slate-500">
+                  <LineReveal text={item.description} />
+                </div>
               </div>
             </div>
           ))}
@@ -54,17 +56,18 @@ const Mission = () => {
 
         <div className="flex flex-1 flex-col">
           <h2 className="mb-2 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            Our Mission
+            <LineReveal text="Our Mission" />
           </h2>
 
-          <p className="mb-2 text-sm font-gilroy-medium text-text md:text-base">
-            Our mission is to inspire exploration and simplify travel through expert support and curated experiences.
-          </p>
+          <div className="mb-4 text-sm font-gilroy-medium text-text md:text-base">
+            <LineReveal text="Our mission is to inspire exploration and simplify travel through expert support and curated experiences." />
+          </div>
 
           <div className="flex-1 overflow-hidden rounded-3xl mt-1">
             <img
               src="/about/img/mission.png"
               className="h-full w-full object-cover"
+              alt="Mission"
             />
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { AnimatedText, LineReveal } from "@/app/utils/animation";
 import Marquee from "react-fast-marquee";
 
 const RecognitionByGovernment = () => {
@@ -6,19 +7,15 @@ const RecognitionByGovernment = () => {
       <div className="mx-auto">
         <div className="text-center max-w-5xl mx-auto">
           <h2 className="mb-4 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            Recognition By Government
+            <LineReveal text="Recognition By Government" />
           </h2>
-          <p className="mx-auto text-sm font-gilroy-medium leading-relaxed text-text">
-            Phoenix Fly, a certified tour operator and ATOAI member, has quickly
-            earned trust in the travel industry, winning multiple awards—including
-            the TripAdvisor Travelers’ Choice 2023 and MSME Best Enterprise for
-            three years—while being recognized by Startup India and featured in
-            ANI and Business Standard.
-          </p>
+          <div className="mx-auto text-sm font-gilroy-medium leading-relaxed text-text">
+            <LineReveal text="Phoenix Fly, a certified tour operator and ATOAI member, has quickly\nearned trust in the travel industry, winning multiple awards—including\nthe TripAdvisor Travelers’ Choice 2023 and MSME Best Enterprise for\nthree years—while being recognized by Startup India and featured in\nANI and Business Standard." />
+          </div>
         </div>
 
 
-        <Marquee speed={200}>
+        <Marquee speed={100} className="mt-12">
           <img src="/about/logos/summit.svg" alt="Summit Hotels" className="ml-8 md:ml-20" />
           <img src="/about/logos/taj.svg" alt="Taj" className="ml-8 md:ml-20" />
           <img src="/about/logos/startup-india.svg" alt="Startup India" className="ml-8 md:ml-20" />
@@ -26,22 +23,22 @@ const RecognitionByGovernment = () => {
         </Marquee>
 
 
-        <div className="mb-20 flex flex-col items-center justify-between gap-6 rounded-xl bg-white px-4 py-4 md:flex-row max-w-5xl mx-auto">
+        <div className="mb-20 mt-12 flex flex-col items-center justify-between gap-6 rounded-xl bg-white px-4 py-4 md:flex-row max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="flex -space-x-3">
-              <img src="/avatars/1.jpg" className="h-10 w-10 rounded-full border-2 border-white" />
-              <img src="/avatars/2.jpg" className="h-10 w-10 rounded-full border-2 border-white" />
-              <img src="/avatars/3.jpg" className="h-10 w-10 rounded-full border-2 border-white" />
-              <img src="/avatars/4.jpg" className="h-10 w-10 rounded-full border-2 border-white" />
+              <img src="/about/img/avatar.svg" className="h-10 w-10 rounded-full border-2 border-white" />
+              <img src="/about/img/avatar.svg" className="h-10 w-10 rounded-full border-2 border-white" />
+              <img src="/about/img/avatar.svg" className="h-10 w-10 rounded-full border-2 border-white" />
+              <img src="/about/img/avatar.svg" className="h-10 w-10 rounded-full border-2 border-white" />
             </div>
 
             <div className="text-center md:text-left">
-              <p className="text-[20px] font-gilroy-semibold text-text">
-                1.2K+ Reviews
-              </p>
-              <p className="text-sm font-gilroy-medium text-slate-500">
-                Hear What Our Travelers Are Saying
-              </p>
+              <h3 className="text-[20px] font-gilroy-semibold text-text">
+                <AnimatedText text="1.2K+ Reviews" />
+              </h3>
+              <div className="text-sm font-gilroy-medium text-slate-500">
+                <AnimatedText text="Hear What Our Travelers Are Saying" />
+              </div>
             </div>
           </div>
 
@@ -54,35 +51,34 @@ const RecognitionByGovernment = () => {
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-2 font-gilroy-semibold text-text text-[20px]">
-              Contact Us
+              <AnimatedText text="Contact Us" />
             </h4>
-            <p className="mb-2 flex items-center gap-2 text-base font-gilroy-medium text-text">
-              📧 phoenixflytravel@gmail.com
-            </p>
-            <p className="flex items-center gap-2 text-base font-gilroy-medium text-text">
-              📞 +91-8861524428
-            </p>
+            <div className="mb-2 flex items-center gap-2 text-base font-gilroy-medium text-text">
+              <AnimatedText text="📧 phoenixflytravel@gmail.com" />
+            </div>
+            <div className="flex items-center gap-2 text-base font-gilroy-medium text-text">
+              <AnimatedText text="📞 +91-8861524428" />
+            </div>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-2 font-gilroy-semibold text-[#16242A] text-[20px]">
-              Address
+              <AnimatedText text="Address" />
             </h4>
-            <p className="leading-relaxed text-base font-gilroy-medium text-text">
-              📍 3rd floor, above united medicals, <br />
-              ramdev galli, belagavi – 590010
-            </p>
+            <div className="leading-relaxed text-base font-gilroy-medium text-text">
+              <LineReveal text="📍 3rd floor, above united medicals,\nramdev galli, belagavi – 590010" />
+            </div>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-4 font-gilroy-semibold text-[#16242A] text-[20px]">
-              We Accept
+              <AnimatedText text="We Accept" />
             </h4>
             <div className="flex items-center gap-4">
-              <img src="/payments/amex.png" className="h-6" />
-              <img src="/payments/mastercard.png" className="h-6" />
-              <img src="/payments/visa.png" className="h-6" />
-              <img src="/payments/paypal.png" className="h-6" />
+              <img src="/about/logos/american_express.svg" className="h-6" alt="Amex" />
+              <img src="/about/logos/mastercard.svg" className="h-6" alt="Mastercard" />
+              <img src="/about/logos/visa.svg" className="h-6" alt="Visa" />
+              <img src="/about/logos/paypal.svg" className="h-6" alt="Paypal" />
             </div>
           </div>
 
