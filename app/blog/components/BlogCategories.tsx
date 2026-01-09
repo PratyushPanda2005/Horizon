@@ -41,12 +41,12 @@ const BlogCategories = () => {
             <div className="max-w-6xl mx-auto">
 
                 {/* Heading */}
-                <div className="text-center mx-auto md:mb-12 mb-10">
+                <div className="text-center mx-auto md:mb-12 mb-10 px-4">
                     <h1 className="text-3xl md:text-4xl font-gilroy-semibold text-text mb-4">
                         <LineReveal text="Welcome To The Phoenix Fly Blogs" />
                     </h1>
-                    <div className="text-text text-sm leading-[30px] max-w-4xl mx-auto">
-                        <LineReveal text="Uncover hidden gems, cultural secrets, and unforgettable experiences\nwith the TripJoy Blog. From personal travel tales to expert planning\nguides, our stories are your passport to inspiring adventures and\nsmart travel. Whether you're chasing bucket-list dreams or weekend\nescapes, there's something here for every explorer." />
+                    <div className="text-text text-sm leading-[30px] mx-auto">
+                        <LineReveal text="Uncover hidden gems, cultural secrets, and unforgettable experiences with the TripJoy Blog. From personal travel tales to expert planning guides, our stories are your passport to inspiring adventures and smart travel. Whether you're chasing bucket-list dreams or weekend escapes, there's something here for every explorer." />
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@ const BlogCategories = () => {
 
                         {categories.map((category, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white rounded-2xl p-3 shadow-sm">
+                                <div className="">
                                     <div className="rounded-xl overflow-hidden mb-4 aspect-4/3">
                                         <img
                                             src={category.image}
