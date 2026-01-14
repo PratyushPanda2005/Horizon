@@ -13,14 +13,69 @@ const DESTINATIONS = [
         image: '/destination_india/kerala.png'
     },
     {
-        name: 'Rajasthan',
-        description: 'Rajasthan is a state in northern India. It is known for its majestic forts, vibrant culture, and the vast Thar Desert.',
-        image: 'https://images.unsplash.com/photo-1599661046289-e318978505c1?q=80&w=2070&auto=format&fit=crop'
-    },
-    {
         name: 'Himachal Pradesh',
         description: 'Himachal Pradesh is a northern Indian state in the Himalayas. It is home to scenic mountain towns and resorts.',
-        image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=2012&auto=format&fit=crop'
+        image: '/destination_india/himachal.png'
+    },
+    {
+        name: 'Gujarat',
+        description: 'Gujarat is a state in western India. It is known for its beaches, temples, and colonial architecture.',
+        image: '/destination_india/gujurat.png'
+    },
+    {
+        name: 'Rajasthan',
+        description: 'Rajasthan is a state in northern India. It is known for its majestic forts, vibrant culture, and the vast Thar Desert.',
+        image: '/destination_india/rajasthan.png'
+    },
+    {
+        name: 'Tamil Nadu',
+        description: 'Tamil Nadu is a state in southern India. It is known for its rich cultural heritage, vibrant festivals, and scenic beauty.',
+        image: '/destination_india/tamil_nadu.png'
+    },
+    {
+        name: 'Jammu and Kashmir',
+        description: 'Jammu and Kashmir is a state in northern India. It is known for its scenic beauty, vibrant culture, and the famous Kashmir Valley.',
+        image: '/destination_india/j&k.png'
+    },
+    {
+        name: 'Karnataka',
+        description: 'Karnataka is a state in southwestern India. It is known for its beaches, temples, and colonial architecture.',
+        image: '/destination_india/karnataka.png'
+    },
+    {
+        name: 'Meghalaya',
+        description: 'Meghalaya is a state in northeastern India. It is known for its scenic beauty, vibrant culture, and the famous Meghalaya Valley.',
+        image: '/destination_india/meghalaya.png'
+    },
+    {
+        name: 'Madhya Pradesh',
+        description: 'Madhya Pradesh is a state in central India. It is known for its scenic beauty, vibrant culture, and the famous Madhya Pradesh Valley.',
+        image: '/destination_india/mp.png'
+    },
+    {
+        name: 'Uttarakhand',
+        description: 'Uttarakhand is a state in northern India. It is known for its scenic beauty, vibrant culture, and the famous Uttarakhand Valley.',
+        image: '/destination_india/uttarakhand.png'
+    },
+    {
+        name: 'Uttar Pradesh',
+        description: 'Uttar Pradesh is a state in northern India. It is known for its scenic beauty, vibrant culture, and the famous Uttarakhand Valley.',
+        image: '/destination_india/up.png'
+    },
+    {
+        name: 'Assam',
+        description: 'Assam is a state in northeastern India. It is known for its scenic beauty, vibrant culture, and the famous Assam Valley.',
+        image: '/destination_india/assam.png'
+    },
+    {
+        name: 'Andhra Pradesh',
+        description: 'Andhra Pradesh is a state in southeastern India. It is known for its scenic beauty, vibrant culture, and the famous Andhra Pradesh Valley.',
+        image: '/destination_india/ap.png'
+    },
+    {
+        name: 'Andaman and Nicobar Islands',
+        description: 'Andaman and Nicobar Islands is a state in northeastern India. It is known for its scenic beauty, vibrant culture, and the famous Andaman and Nicobar Islands Valley.',
+        image: '/destination_india/andaman.png'
     }
 ]
 

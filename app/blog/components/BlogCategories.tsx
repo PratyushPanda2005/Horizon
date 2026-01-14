@@ -88,7 +88,6 @@ const BlogCategories = () => {
                         navigation
                         className="pb-12"
                     >
-
                         {categories.map((category, index) => (
                             <SwiperSlide key={index}>
                                 <div className="">
@@ -110,8 +109,6 @@ const BlogCategories = () => {
                         ))}
                     </Swiper>
                 </div>
-
-
 
                 {/* Desktop Grid */}
                 <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
