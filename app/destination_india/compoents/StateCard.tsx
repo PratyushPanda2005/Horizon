@@ -5,15 +5,22 @@ interface StateCardProps {
     name: string;
     description: string;
     image: string;
+    mobileImage?: string;
 }
 
-const StateCard = ({ name, description, image }: StateCardProps) => {
+const StateCard = ({ name, description, image, mobileImage }: StateCardProps) => {
     return (
-        <Card style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} className='w-full h-[420px] flex justify-center items-center rounded-3xl shadow-none'>
-            <div className='flex flex-col justify-center max-w-sm gap-4 h-full'>
-                <h2 className='text-5xl font-bold text-black font-gilroy-medium'>{name}</h2>
-                <p className='text-black font-gilroy-medium'>{description}</p>
-                <button className='bg-primary-orange text-white px-8 py-3 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
+        <Card
+            style={{
+                '--bg-desktop': `url(${image})`,
+                '--bg-mobile': `url(${mobileImage || image})`
+            } as React.CSSProperties}
+            className="w-full h-[400px] p-8 sm:h-[30vw] sm:pl-[34vw] xl:h-[420px] xl:flex xl:justify-center xl:items-center xl:pl-0 rounded-3xl shadow-none bg-(image:--bg-mobile) sm:bg-(image:--bg-desktop) bg-cover bg-center bg-no-repeat"
+        >
+            <div className='flex flex-col sm:justify-center max-w-sm gap-2 lg:gap-4 h-full '>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-black font-gilroy-medium'>{name}</h2>
+                <p className='text-black font-gilroy-medium text-sm lg:text-base'>{description}</p>
+                <button className='bg-primary-orange text-white px-4 py-2 text-sm lg:text-base lg:px-8 lg:py-3 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
                     Explore {name}
                 </button>
             </div>
