@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/card'
+import Link from 'next/link';
 import React from 'react'
 
 interface StateCardProps {
@@ -6,9 +7,10 @@ interface StateCardProps {
     description: string;
     image: string;
     mobileImage?: string;
+    slug: string;
 }
 
-const StateCard = ({ name, description, image, mobileImage }: StateCardProps) => {
+const StateCard = ({ name, description, image, mobileImage, slug }: StateCardProps) => {
     return (
         <Card
             style={{
@@ -20,9 +22,11 @@ const StateCard = ({ name, description, image, mobileImage }: StateCardProps) =>
             <div className='flex flex-col sm:justify-center max-w-sm gap-2 lg:gap-4 h-full '>
                 <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-black font-gilroy-medium'>{name}</h2>
                 <p className='text-black font-gilroy-medium text-sm lg:text-base'>{description}</p>
-                <button className='bg-primary-orange text-white px-4 py-2 text-sm lg:text-base lg:px-8 lg:py-3 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
-                    Explore {name}
-                </button>
+                <Link href={`/destination_india/${slug}`}>
+                    <button className='bg-primary-orange text-white px-4 py-2 text-sm lg:text-base lg:px-8 lg:py-3 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
+                        Explore {name}
+                    </button>
+                </Link>
             </div>
         </Card>
     )
