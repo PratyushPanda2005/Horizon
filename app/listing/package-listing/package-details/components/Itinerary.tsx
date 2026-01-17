@@ -117,7 +117,7 @@ const Itinerary = () => {
     const [openDay, setOpenDay] = useState<number | null>(1);
 
     return (
-        <div className="py-12 border-t border-gray-200">
+        <div className="py-12 border-t border-black">
             <div className="flex flex-col lg:flex-row justify-between ">
                 <div className="">
                     <h2 className="text-4xl font-gilroy-semibold text-[#16242A]">Itenary</h2>

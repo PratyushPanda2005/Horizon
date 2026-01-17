@@ -6,6 +6,9 @@ import Itinerary from "./components/Itinerary";
 import HotelAvailability from "./components/HotelAvailability";
 import AboutPackage from "./components/AboutPackage";
 import StateInfo from "./components/StateInfo";
+import Policies from "./components/Policies";
+import Location from "./components/Location";
+import Reviews from "./components/Reviews";
 
 const PackageDetails = () => {
     return (
@@ -65,7 +68,7 @@ const PackageDetails = () => {
                             </div>
                         </div>
 
-                        <hr className="border-gray-200 mb-8" />
+                        <hr className="border-black mb-8" />
 
                         {/* OVERVIEW */}
                         <div className="mb-12">
@@ -80,6 +83,9 @@ const PackageDetails = () => {
                         <HotelAvailability />
                         <AboutPackage />
                         <StateInfo />
+                        <Policies />
+                        <Location />
+                        <Reviews />
                     </div>
                 </div>
             </div>
