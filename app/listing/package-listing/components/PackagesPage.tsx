@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
     MapPin,
     Search,
@@ -9,11 +10,12 @@ import {
     Activity,
     Square,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function PackagesPage() {
     return (
         <div className="min-h-screen px-8">
-            <div className="max-w-7xl mx-auto py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
+            <div className="max-w-6xl mx-auto py-6 grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6">
                 {/* LEFT FILTERS */}
                 <aside className="hidden lg:block">
                     <Filters />
@@ -219,9 +221,9 @@ function PackageCard({ early }: { early?: boolean }) {
                     <p className="text-orange-500 text-lg font-gilroy-bold">₹ 22,999</p>
                     <p className="text-xs font-gilroy-medium text-gray-500">Per Person</p>
                 </div>
-                <button className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-gilroy-medium">
+                <Link href="/listing/package-listing/package-details" className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-gilroy-medium">
                     Book Now
-                </button>
+                </Link>
             </div>
         </div>
     );

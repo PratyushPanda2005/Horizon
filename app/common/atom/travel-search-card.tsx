@@ -10,44 +10,46 @@ import {
 export default function TravelSearchCard() {
     return (
         <section className="px-8 py-16">
-            <div className="w-full max-w-7xl mx-auto bg-[#B3E5F1] rounded-xl p-6">
-                {/* Row 1 */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                    <InputBox label="Leaving From" value="Delhi" />
-                    <InputBox label="Destination" value="Chandigarh" />
-                    <InputBox
-                        label="Travellers"
-                        value="2 Travellers, 1 Room"
-                        icon={<Users size={18} />}
-                    />
+            <div className="w-full max-w-6xl mx-auto">
+                <div className="w-full bg-[#B3E5F1] rounded-xl p-6">
+                    {/* Row 1 */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <InputBox label="Leaving From" value="Delhi" />
+                        <InputBox label="Destination" value="Chandigarh" />
+                        <InputBox
+                            label="Travellers"
+                            value="2 Travellers, 1 Room"
+                            icon={<Users size={18} />}
+                        />
+                    </div>
+
+                    {/* Row 2 */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <SelectBox label="Theme" value="Romantic Travel" />
+                        <DateBox label="Departure" value="21-05" />
+                        <DateBox label="Return" value="25-05" />
+                    </div>
+
+                    {/* Flight Added */}
+                    <div className="flex items-center gap-2 mt-4 text-sm font-gilroy-medium text-gray-800">
+                        <CheckSquare size={18} className="text-black" />
+                        Flight Added
+                        <Plane size={16} />
+                        <ChevronDown size={16} />
+                    </div>
+
+                </div>
+                {/* Options */}
+                <div className="mt-6 space-y-3 text-sm font-gilroy-medium text-gray-700">
+                    <Option label="Don’t Add Return Flight" checked={false} />
+                    <Option label="Don’t Add Cab" checked={false} />
                 </div>
 
-                {/* Row 2 */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <SelectBox label="Theme" value="Romantic Travel" />
-                    <DateBox label="Departure" value="21-05" />
-                    <DateBox label="Return" value="25-05" />
-                </div>
-
-                {/* Flight Added */}
-                <div className="flex items-center gap-2 mt-4 text-sm font-gilroy-medium text-gray-800">
-                    <CheckSquare size={18} className="text-black" />
-                    Flight Added
-                    <Plane size={16} />
-                    <ChevronDown size={16} />
-                </div>
-
+                {/* Search */}
+                <button className="mt-6 w-64 rounded-lg bg-[#e6762e] py-3 text-white font-gilroy-semibold hover:opacity-90">
+                    Search
+                </button>
             </div>
-            {/* Options */}
-            <div className="mt-6 space-y-3 text-sm font-gilroy-medium text-gray-700">
-                <Option label="Don’t Add Return Flight" checked={false} />
-                <Option label="Don’t Add Cab" checked={false} />
-            </div>
-
-            {/* Search */}
-            <button className="mt-6 w-64 rounded-lg bg-[#e6762e] py-3 text-white font-gilroy-semibold hover:opacity-90">
-                Search
-            </button>
         </section>
     );
 }
