@@ -36,9 +36,9 @@ const natureTrips = [
 export default function NatureEscapes() {
     return (
         <section className="pt-20 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-base md:text-lg font-gilroy-semibold">Nature Lover’s Escapes</h3>
+                    <h3 className="text-base md:text-2xl font-gilroy-semibold">Nature Lover’s Escapes</h3>
 
                     <div className="flex gap-2">
                         <div className="nature-prev w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer">
@@ -60,14 +60,14 @@ export default function NatureEscapes() {
                     slidesPerView={1.2}
                     breakpoints={{
                         768: { slidesPerView: 3 },
-                        1024: { slidesPerView: 4 },
+                        1024: { slidesPerView: 3.4 },
                     }}
                 >
                     {natureTrips.map((item, i) => (
                         <SwiperSlide key={i}>
-                            <div className="relative h-[260px] rounded-2xl overflow-hidden text-white">
+                            <div className="relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden text-white">
                                 <img
-                                    src={item.img}
+                                    src="/slider-bg.png"
                                     className="absolute inset-0 w-full h-full object-cover"
                                     alt={item.title}
                                 />

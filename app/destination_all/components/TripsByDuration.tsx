@@ -26,11 +26,7 @@ const timeTrips = [
 export default function TripsByDuration() {
     return (
         <section className="px-4 md:px-8 pt-20">
-            <div className="max-w-7xl mx-auto">
-
-
-
-
+            <div className="max-w-6xl mx-auto">
                 {/* Gradient Card */}
                 <div className="relative rounded-3xl overflow-hidden px-6 py-14 md:px-16 bg-linear-to-r from-[#FFD9BD] to-[#B3E5F1]">
 
@@ -57,7 +53,7 @@ export default function TripsByDuration() {
                         <h2 className="text-xl md:text-2xl font-gilroy-semibold text-gray-900 mb-2">
                             Trips Tailored to Your Time
                         </h2>
-                        <p className="text-sm text-gray-600 max-w-xl mx-auto font-gilroy-medium">
+                        <p className="text-sm text-black max-w-xl mx-auto font-gilroy-medium">
                             From quick getaways to long escapes — we’ve got you covered.
                         </p>
                     </div>
@@ -81,10 +77,10 @@ export default function TripsByDuration() {
 
                                 {/* Text */}
                                 <div className="relative text-center leading-tight">
-                                    <p className="text-lg md:text-xl font-gilroy-semibold">
+                                    <p className="text-lg md:text-2xl font-gilroy-semibold">
                                         {item.label}
                                     </p>
-                                    <p className="text-[10px] md:text-xs tracking-wide text-gray-200">
+                                    <p className="text-[10px] md:text-sm tracking-wide text-gray-200">
                                         {item.sub}
                                     </p>
                                 </div>

@@ -35,12 +35,7 @@ const DestinationPage = () => {
             <NatureEscapes />
             <VisaOnArrival />
             <TripsByDuration />
-            <DestinationSlider
-                title="Visa on Arrival Destinations"
-                items={visaTrips}
-                prevClass="visa-prev"
-                nextClass="visa-next"
-            />
+            <VisaOnArrival />
         </main>
     )
 }

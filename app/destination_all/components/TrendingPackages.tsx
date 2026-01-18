@@ -4,28 +4,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon, Plane } from "lucide-react";
 
 const TrendingPackages = () => {
     const trips = Array.from({ length: 6 });
 
     return (
-        <section className="pt-20 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
+        <section className="pt-20 md:pt-24 px-4 md:px-8">
+            <div className="max-w-6xl mx-auto">
 
                 {/* Heading */}
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl font-gilroy-semibold text-gray-900 mb-3">
+                    <h2 className="text-2xl md:text-3xl font-gilroy-semibold text-gray-900 mb-2">
                         Explore All Travel Packages In One Place
                     </h2>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text- font-gilroy-medium text-sm">
                         Discover all domestic and international trips tailored for every kind of traveler.
                     </p>
                 </div>
 
                 {/* Subheading + Nav */}
                 <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-base md:text-lg font-gilroy-semibold text-gray-900">
+                    <h3 className="text-base md:text-2xl font-gilroy-semibold text-gray-900">
                         Trending Trips Everyone&apos;s Booking
                     </h3>
 
@@ -51,16 +51,16 @@ const TrendingPackages = () => {
                     breakpoints={{
                         0: { slidesPerView: 1.1 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        1024: { slidesPerView: 3.2 },
                     }}
                 >
                     {trips.map((_, i) => (
                         <SwiperSlide key={i}>
-                            <div className="relative rounded-2xl overflow-hidden h-[420px] text-white">
+                            <div className="relative rounded-2xl overflow-hidden h-[320px] lg:h-[384px] text-white">
 
                                 {/* Image */}
                                 <img
-                                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=800"
+                                    src="/bg.png"
                                     alt="trip"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
@@ -69,46 +69,52 @@ const TrendingPackages = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
                                 {/* Discount */}
-                                <span className="absolute top-4 right-4 bg-orange-500 text-xs px-3 py-1 rounded-full font-medium">
-                                    25% OFF
+                                <span className="absolute top-2 right-2 flex items-center gap-1 bg-orange-500 text-xs px-3 py-2 rounded-2xl font-gilroy-medium">
+                                    <span >
+                                        <img
+                                            src={"/iconamoon_discount-fill.svg"}
+                                            className="w-4 h-4"
+                                        />
+                                    </span> 25% OFF
                                 </span>
 
-                                {/* Duration */}
-                                <span className="absolute top-4 left-4 bg-black/60 text-xs px-3 py-1 rounded-full">
-                                    6N / 7D
-                                </span>
 
                                 {/* Content */}
                                 <div className="absolute bottom-0 p-4 w-full">
-                                    <h4 className="font-gilroy-semibold text-sm mb-1">
+
+                                    {/* Duration */}
+                                    <span className=" bg-black/40 text-sm px-3 py-2 rounded-lg font-gilroy-medium">
+                                        6N / 7D
+                                    </span>
+                                    <h4 className="font-gilroy-semibold text-base md:text-lg mb-1 mt-2">
                                         Shimla, Kullu, Manali in Winters
                                     </h4>
-                                    <p className="text-xs text-gray-200 mb-3">
+                                    <p className="text-sm font-gilroy-medium text-peach mb-2">
                                         Himachal Pradesh
                                     </p>
 
                                     {/* Icons row */}
-                                    <div className="flex justify-between text-[10px] text-gray-300 mb-3">
-                                        <span>✈ 2 Flights</span>
-                                        <span>🏨 1 Hotel</span>
-                                        <span>🎯 5 Activities</span>
-                                        <span>🚗 Transfers</span>
+                                    <div className="flex justify-between text-[10px] gap-2 text-peach mb-2 font-gilroy-medium">
+                                        <span className="flex flex-col flex-1 items-center gap-1 bg-black/40 p-2 rounded-lg"><img src="/mdi_flight.svg" className="w-4 h-4" /> 2 Flights</span>
+                                        <span className="flex flex-col flex-1 items-center gap-1 bg-black/40 p-2 rounded-lg"><img src="/lucide_hotel.svg" className="w-4 h-4" /> 1 Hotel</span>
+                                        <span className="flex flex-col flex-1 items-center gap-1 bg-black/40 p-2 rounded-lg"><img src="/tabler_trekking.svg" className="w-4 h-4" /> 5 Activities</span>
+                                        <span className="flex flex-col flex-1 items-center gap-1 bg-black/40 p-2 rounded-lg"><img src="/mdi_cab.svg" className="w-4 h-4" /> Transfers</span>
                                     </div>
 
                                     {/* Price */}
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-lg font-gilroy-semibold text-white">
+                                    <div className="flex items-center gap-2 font-gilroy-medium">
+                                        <span className="text-[28px] font-gilroy-semibold text-white">
                                             <span className="text-primary-orange">₹</span> 5,999
                                         </span>
-                                        <span className="text-xs line-through text-gray-400">
+                                        <span className="text-sm line-through text-peach">
                                             12,999
                                         </span>
-                                        <span className="text-xs text-gray-300">
+                                        <span className="text-sm text-peach">
                                             Per Person
                                         </span>
                                     </div>
 
-                                    <p className="text-[10px] text-gray-400 mt-1">
+                                    <p className="text-sm text-peach font-gilroy-medium">
                                         Includes taxes
                                     </p>
                                 </div>
