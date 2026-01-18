@@ -21,9 +21,9 @@ const StateCard = ({ name, description, image, mobileImage, slug }: StateCardPro
         >
             <div className='flex flex-col sm:justify-center max-w-sm gap-2 lg:gap-4 h-full'>
                 <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black font-gilroy-medium'>{name}</h2>
-                <p className='text-black font-gilroy-medium text-sm lg:text-base'>{description}</p>
+                <p className='text-black font-gilroy-medium text-sm lg:text-lg'>{description}</p>
                 <Link href={`/destination_india/${slug}`}>
-                    <button className='bg-primary-orange text-white px-4 py-2 text-sm lg:text-base lg:px-8 lg:py-3 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
+                    <button className='bg-primary-orange text-white p-4 text-sm lg:text-base lg:px-10 lg:py-5 rounded-lg font-gilroy-medium hover:bg-black hover:text-primary-orange transition-colors w-fit'>
                         Explore {name}
                     </button>
                 </Link>
