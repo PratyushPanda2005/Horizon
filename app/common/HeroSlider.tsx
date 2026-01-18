@@ -1,4 +1,5 @@
 "use client"
+import { LineReveal } from "@/app/utils/animation"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Pagination } from "swiper/modules"
@@ -27,16 +28,16 @@ export default function HeroSlider({
     autoplayDelay = 3500,
 }: HeroSliderProps) {
     return (
-        <section className="w-full py-16 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
+        <section className="w-full py-12 px-4 md:px-8">
+            <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-10">
                     <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3 title-heading">
-                        {heading}
+                        <LineReveal text={heading} />
                     </h2>
                     {subheading && (
                         <p className="text-sm md:text-base font-gilroy-medium sub-title">
-                            {subheading}
+                            <LineReveal text={subheading} />
                         </p>
                     )}
                 </div>

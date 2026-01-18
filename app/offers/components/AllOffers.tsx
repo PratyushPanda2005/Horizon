@@ -1,4 +1,5 @@
 import React from "react";
+import { LineReveal } from "@/app/utils/animation";
 
 type Offer = {
     title: string;
@@ -61,14 +62,14 @@ const offers: Offer[] = [
 const AllOffers: React.FC = () => {
     return (
         <section className="py-12 px-8">
-            <div className="mx-auto max-w-7xl">
+            <div className="mx-auto max-w-6xl">
                 {/* Header */}
                 <div className="mb-12 text-center">
-                    <h2 className="text-3xl font-gilroy-semibold text-gray-900">
-                        All Offers
+                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
+                        <LineReveal text="All Offers" />
                     </h2>
-                    <p className="mt-2 text-base font-gilroy-medium text-gray-500">
-                        Discover the exclusive offers to make your next trip even better.
+                    <p className="mt-2 text-base font-gilroy-medium">
+                        <LineReveal text="Discover the exclusive offers to make your next trip even better." />
                     </p>
                 </div>
 
@@ -88,11 +89,11 @@ const AllOffers: React.FC = () => {
                                 {/* Content */}
                                 <div className={index === 0 ? "max-w-md relative z-50" : "relative z-50"}>
                                     <h3 className="text-lg font-gilroy-semibold text-gray-900">
-                                        {offer.title}
+                                        <LineReveal text={offer.title} />
                                     </h3>
 
-                                    <p className="mt-2 text-sm font-gilroy-medium text-gray-500">
-                                        {offer.description}
+                                    <p className={index === 0 ? "max-w-md relative z-50 mt-2 text-sm font-gilroy-medium" : "relative z-50 max-w-2xs mt-2 text-sm font-gilroy-medium"}>
+                                        <LineReveal text={offer.description} />
                                     </p>
 
                                     <button className="mt-6 inline-flex items-center rounded-lg bg-primary-orange px-4 py-2 text-sm font-gilroy-semibold text-white hover:opacity-90 transition">

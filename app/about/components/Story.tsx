@@ -16,7 +16,7 @@ const Story = () => {
 
         <div className="w-full md:w-1/2">
           <h2 className="mb-4 text-3xl font-gilroy-semibold text-[#16242A] md:text-4xl ">
-            <LineReveal text="Our Story" />
+            Our Story
           </h2>
           <div className="mb-4 text-sm leading-relaxed text-slate-700 md:text-base font-gilroy-medium">
             <LineReveal

@@ -34,7 +34,7 @@ const OurValues = () => {
 
         <div className="mb-14 text-center">
           <h2 className="mb-3 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            <LineReveal text="Our Values" />
+            Our Values
           </h2>
           <div className="mx-auto text-sm font-gilroy-medium text-text md:text-base">
             <LineReveal text="We’re dedicated to exceptional experiences through trust, fresh thinking,\nand a genuine love for travel." />
@@ -52,7 +52,7 @@ const OurValues = () => {
               </div>
 
               <h3 className="mb-2 text-lg font-gilroy-semibold text-text">
-                <AnimatedText text={item.title} />
+                {item.title}
               </h3>
 
               <div className="text-sm font-gilroy-medium leading-relaxed text-slate-500">

@@ -33,7 +33,7 @@ const WhyIsItGreat = () => {
       <div className="mx-auto max-w-5xl">
 
         <h2 className="mb-16 text-center text-3xl font-gilroy-semibold text-text md:text-4xl">
-          <LineReveal text="Why Is It Great" />
+          Why Is It Great
         </h2>
 
         <div className="grid gap-y-16 md:gap-y-16 gap-x-4 md:gap-x-12 grid-cols-2 max-w-3xl mx-auto w-full">
@@ -47,7 +47,7 @@ const WhyIsItGreat = () => {
               </div>
 
               <h3 className="mb-2 text-lg font-gilroy-semibold text-text">
-                <AnimatedText text={item.title} />
+                {item.title}
               </h3>
 
               <div className="max-w-[310px] text-sm font-gilroy-medium leading-relaxed text-text ">

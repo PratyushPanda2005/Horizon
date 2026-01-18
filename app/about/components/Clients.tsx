@@ -7,7 +7,7 @@ const RecognitionByGovernment = () => {
       <div className="mx-auto">
         <div className="text-center max-w-5xl mx-auto">
           <h2 className="mb-4 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            <LineReveal text="Recognition By Government" />
+            Recognition By Government
           </h2>
           <div className="mx-auto text-sm font-gilroy-medium leading-relaxed text-text">
             <LineReveal text="Phoenix Fly, a certified tour operator and ATOAI member, has quickly\nearned trust in the travel industry, winning multiple awards—including\nthe TripAdvisor Travelers’ Choice 2023 and MSME Best Enterprise for\nthree years—while being recognized by Startup India and featured in\nANI and Business Standard." />
@@ -34,10 +34,10 @@ const RecognitionByGovernment = () => {
 
             <div className="text-center md:text-left">
               <h3 className="text-[20px] font-gilroy-semibold text-text">
-                <AnimatedText text="1.2K+ Reviews" />
+                1.2K+ Reviews
               </h3>
               <div className="text-sm font-gilroy-medium text-slate-500">
-                <AnimatedText text="Hear What Our Travelers Are Saying" />
+                <LineReveal text="Hear What Our Travelers Are Saying" />
               </div>
             </div>
           </div>
@@ -51,19 +51,19 @@ const RecognitionByGovernment = () => {
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-2 font-gilroy-semibold text-text text-[20px]">
-              <AnimatedText text="Contact Us" />
+              Contact Us
             </h4>
             <div className="mb-2 flex items-center gap-2 text-base font-gilroy-medium text-text">
-              <AnimatedText text="📧 phoenixflytravel@gmail.com" />
+              <LineReveal text="📧 phoenixflytravel@gmail.com" />
             </div>
             <div className="flex items-center gap-2 text-base font-gilroy-medium text-text">
-              <AnimatedText text="📞 +91-8861524428" />
+              <LineReveal text="📞 +91-8861524428" />
             </div>
           </div>
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-2 font-gilroy-semibold text-[#16242A] text-[20px]">
-              <AnimatedText text="Address" />
+              Address
             </h4>
             <div className="leading-relaxed text-base font-gilroy-medium text-text">
               <LineReveal text="📍 3rd floor, above united medicals,\nramdev galli, belagavi – 590010" />
@@ -72,7 +72,7 @@ const RecognitionByGovernment = () => {
 
           <div className="flex flex-col items-center md:items-start">
             <h4 className="mb-4 font-gilroy-semibold text-[#16242A] text-[20px]">
-              <AnimatedText text="We Accept" />
+              We Accept
             </h4>
             <div className="flex items-center gap-4">
               <img src="/about/logos/american_express.svg" className="h-6" alt="Amex" />

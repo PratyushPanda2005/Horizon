@@ -1,4 +1,5 @@
 import React from "react";
+import { LineReveal } from "@/app/utils/animation";
 
 type Step = {
     step: string;
@@ -41,10 +42,10 @@ const steps: Step[] = [
 const HowItWorks: React.FC = () => {
     return (
         <section className="py-16 px-8">
-            <div className="mx-auto max-w-7xl ">
+            <div className="mx-auto max-w-6xl ">
                 {/* Title */}
-                <h2 className="mb-10 text-center text-3xl font-gilroy-semibold text-gray-900">
-                    How It Works
+                <h2 className="mb-10 text-center text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
+                    <LineReveal text="How It Works" />
                 </h2>
 
                 {/* Steps */}

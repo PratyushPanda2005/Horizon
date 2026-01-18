@@ -44,7 +44,7 @@ const Mission = () => {
 
               <div>
                 <h3 className="mb-1 text-base font-gilroy-semibold text-[#16242A]">
-                  <AnimatedText text={item.title} />
+                  {item.title}
                 </h3>
                 <div className="text-sm font-gilroy-medium text-slate-500">
                   <LineReveal text={item.description} />
@@ -56,7 +56,7 @@ const Mission = () => {
 
         <div className="flex flex-1 flex-col">
           <h2 className="mb-2 text-3xl font-gilroy-semibold text-text md:text-4xl">
-            <LineReveal text="Our Mission" />
+            Our Mission
           </h2>
 
           <div className="mb-4 text-sm font-gilroy-medium text-text md:text-base">

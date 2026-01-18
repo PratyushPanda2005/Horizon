@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex justify-between flex-col items-start gap-6 md:gap-12 md:flex-row">
 
           <h1 className="text-4xl font-gilroy-semibold leading-tight text-text md:text-[42px] tracking-[-0.02em] w-fit">
-            <LineReveal text="Redefining Travel Experiences" />
+            Redefining Travel Experiences
           </h1>
 
           <div className="max-w-3xl text-sm leading-[30px] text-text md:text-base font-gilroy-medium w-full">
