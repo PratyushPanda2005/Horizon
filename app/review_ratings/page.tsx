@@ -65,8 +65,8 @@ const ReviewRatings = () => {
     const [activeOtherSubFilter, setActiveOtherSubFilter] = useState("All");
     return (
         <main>
-            <section className='relative px-8 py-16 font-gilroy-medium'>
-                <div className='max-w-7xl mx-auto relative'>
+            <section className='relative  py-16 font-gilroy-medium'>
+                <div className='max-w-6xl px-8 mx-auto relative'>
                     <img
                         src={"/review_ratings/review_ratings-bg.png"}
                         alt="Logo"
@@ -78,12 +78,12 @@ const ReviewRatings = () => {
                 </div>
 
 
-                <div className="max-w-7xl mx-auto py-10 min-h-screen">
+                <div className="max-w-6xl px-8 mx-auto py-10 min-h-screen">
                     {/* Header */}
                     <div className="flex justify-between items-start mb-8">
                         <div>
-                            <h1 className="text-3xl font-gilroy-bold mb-1">User Rating & Reviews</h1>
-                            <p className="text-gray-600 font-gilroy-medium">
+                            <h1 className="text-4xl tracking-[-0.02em] font-gilroy-semibold mb-1">User Rating & Reviews</h1>
+                            <p className=" font-gilroy-medium">
                                 Discover The Collective Wisdom Of The Crowd Through User Ratings And Reviews
                             </p>
                         </div>
@@ -93,13 +93,13 @@ const ReviewRatings = () => {
                     </div>
 
                     {/* Tabs */}
-                    <div className="flex gap-6 border-b mb-6 text-sm font-gilroy-semibold text-gray-600 overflow-x-auto no-scrollbar">
+                    <div className="flex justify-between w-full border-b border-gray-400 mb-6 text-sm font-gilroy-semibold text-gray-600 overflow-x-auto no-scrollbar">
                         {tabs.map((tab, i) => (
                             <button
                                 key={i}
                                 onClick={() => setActiveTab(tab)}
                                 className={`pb-3 transition-colors whitespace-nowrap ${activeTab === tab
-                                    ? "border-b-2 border-orange-500 text-black font-gilroy-bold"
+                                    ? "border-b-3 border-orange-500 text-black font-gilroy-semibold"
                                     : "hover:text-black"
                                     }`}
                             >

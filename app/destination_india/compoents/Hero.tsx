@@ -15,7 +15,7 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-20 mx-auto flex w-full max-w-7xl flex-col items-center">
-                <h1 className="text-[120px] lg:text-[180px] -tracking-[0.01em] font-gilroy-bold uppercase text-white">
+                <h1 className="text-[120px] lg:text-[21vw] -tracking-[0.01em] font-gilroy-bold uppercase text-white">
                     india
                 </h1>
             </div>

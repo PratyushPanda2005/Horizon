@@ -24,20 +24,22 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
                 <span className="bg-orange-500 text-white text-sm font-gilroy-bold px-3 py-1 rounded-md">
                     {review.rating} ★
                 </span>
-                <h3 className="text-xl font-gilroy-bold">{review.title}</h3>
+                <h3 className="text-xl font-gilroy-semibold">{review.title}</h3>
             </div>
 
-            <p className="text-gray-600 font-gilroy-medium mb-3">{review.subtitle}</p>
+            <p className=" font-gilroy-semibold mb-3">{review.subtitle}</p>
 
             {/* Meta */}
-            <div className="flex flex-wrap items-center text-sm text-gray-500 gap-2 mb-4">
-                <span className="font-gilroy-semibold text-gray-700">{review.author}</span>
+            <div className="flex flex-wrap items-center text-base  gap-2 mb-4">
+                <span className="font-gilroy-semibold ">{review.author}</span>
                 <span>•</span>
                 <span>{review.date}</span>
                 {review.verified && (
                     <>
                         <span>•</span>
-                        <span className="text-green-600 font-gilroy-semibold">✔ Verified Traveler</span>
+                        <span className="flex items-center gap-1 font-gilroy-semibold">
+                            <img src="/icons/solar_verified-check-bold.svg" alt="" />
+                            Verified Traveler</span>
                     </>
                 )}
                 <span>•</span>
@@ -47,7 +49,7 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="leading-relaxed mb-6">
                 {review.description}
             </p>
 
