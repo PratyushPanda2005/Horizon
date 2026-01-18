@@ -1,4 +1,5 @@
 "use client";
+import { LineReveal } from "@/app/utils/animation";
 
 const timeTrips = [
     {
@@ -51,10 +52,10 @@ export default function TripsByDuration() {
                     {/* Content */}
                     <div className="relative z-10 text-center mb-10">
                         <h2 className="text-xl md:text-2xl font-gilroy-semibold text-gray-900 mb-2">
-                            Trips Tailored to Your Time
+                            <LineReveal text="Trips Tailored to Your Time" />
                         </h2>
                         <p className="text-sm text-black max-w-xl mx-auto font-gilroy-medium">
-                            From quick getaways to long escapes — we’ve got you covered.
+                            <LineReveal text="From quick getaways to long escapes — we’ve got you covered." />
                         </p>
                     </div>
 

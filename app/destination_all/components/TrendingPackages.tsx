@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ArrowLeftIcon, ArrowRightIcon, Plane } from "lucide-react";
+import { LineReveal } from "@/app/utils/animation";
 
 const TrendingPackages = () => {
     const trips = Array.from({ length: 6 });
@@ -16,17 +17,17 @@ const TrendingPackages = () => {
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h2 className="text-2xl md:text-3xl font-gilroy-semibold text-gray-900 mb-2">
-                        Explore All Travel Packages In One Place
+                        <LineReveal text="Explore All Travel Packages In One Place" />
                     </h2>
                     <p className="text- font-gilroy-medium text-sm">
-                        Discover all domestic and international trips tailored for every kind of traveler.
+                        <LineReveal text="Discover all domestic and international trips tailored for every kind of traveler." />
                     </p>
                 </div>
 
                 {/* Subheading + Nav */}
                 <div className="flex items-center justify-between mb-6">
                     <h3 className="text-base md:text-2xl font-gilroy-semibold text-gray-900">
-                        Trending Trips Everyone&apos;s Booking
+                        <LineReveal text="Trending Trips Everyone's Booking" />
                     </h3>
 
                     <div className="flex gap-3">

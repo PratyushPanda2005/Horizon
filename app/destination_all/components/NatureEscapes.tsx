@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
+import { LineReveal } from "@/app/utils/animation";
 
 const natureTrips = [
     {
@@ -38,7 +39,9 @@ export default function NatureEscapes() {
         <section className="pt-20 px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-base md:text-2xl font-gilroy-semibold">Nature Lover’s Escapes</h3>
+                    <h3 className="text-base md:text-2xl font-gilroy-semibold">
+                        <LineReveal text="Nature Lover’s Escapes" />
+                    </h3>
 
                     <div className="flex gap-2">
                         <div className="nature-prev w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer">
