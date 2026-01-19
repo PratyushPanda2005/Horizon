@@ -33,7 +33,7 @@ export function FloatingPillSelect({
             pl-5 pr-11
             pt-7
             text-sm
-            font-gilroy-semibold
+            font-gilroy-medium
             outline-none
             border-none
             appearance-none
@@ -53,7 +53,7 @@ export function FloatingPillSelect({
             text-gray-500
           "
                 >
-                    <ChevronDown className="w-4 h-4 text-gray-500" />
+                    <ChevronDown size={24} className="text-gray-500" />
                 </span>
             </div>
         </div>

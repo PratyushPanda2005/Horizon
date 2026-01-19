@@ -1,3 +1,7 @@
+import { Search } from 'lucide-react'
+import { cn } from '@/lib/utils'
+import { FloatingPillInput } from '../common/atom/floating-pill-input'
+import { FloatingPillSelect } from '../common/atom/floating-pill-select'
 import Hero from './compoents/Hero'
 import StateCard from './compoents/StateCard'
 
@@ -113,32 +117,51 @@ const DestinationIndia = () => {
     return (
         <main>
             <Hero />
-            <section className="w-full py-16">
+            <section className="w-full py-16 lg:py-20">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-center mb-3">
+                    <h2 className="text-3xl md:text-4xl lg:text-[52px] font-gilroy-semibold text-center mb-1">
                         Explore <span className="text-primary-orange">India</span>
                     </h2>
-                    <p className="text-sm md:text-base text-gray-500 font-gilroy-medium text-center mb-8">
+                    <p className="text-sm md:text-base lg:text-lg  font-gilroy-medium text-center mb-4">
                         Embark on a Journey to Explore India's Rich Heritage and Natural Beauty
                     </p>
                     <div>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
-                            <div className="w-full md:max-w-md">
+                            <div className="relative max-w-md w-full group">
+                                <span className="absolute top-3 left-7 text-xs text-gray-400 pointer-events-none font-gilroy-medium">
+                                    Search here
+                                </span>
+
                                 <input
                                     type="text"
-                                    placeholder="Search destinations..."
-                                    className="w-full px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-orange/20 focus:border-primary-orange font-gilroy-medium bg-white"
+                                    placeholder="Search here"
+                                    className={cn(
+                                        `
+                                        placeholder:text-black
+                                     w-full h-16 rounded-full
+                                     px-7 pt-6
+                                     text-sm
+                                     outline-none
+                                     focus:border-gray-300
+                                     bg-white
+                                     font-gilroy-medium
+                                   `,
+
+                                    )}
                                 />
+                                <div className="absolute right-6 top-1/2 -translate-y-1/2 text-[#16242A]/60">
+                                    <Search size={24} strokeWidth={1.5} />
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4 w-full md:w-auto">
-                                <label className="text-gray-600 font-gilroy-medium whitespace-nowrap">Sort by:</label>
-                                <select className="flex-1 md:w-48 px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-orange/20 focus:border-primary-orange font-gilroy-medium bg-white cursor-pointer">
-                                    <option value="all">All Destinations</option>
-                                    <option value="popular">Most Popular</option>
-                                    <option value="rating">Top Rated</option>
-                                    <option value="newest">Newest Added</option>
-                                </select>
-                            </div>
+
+                            <FloatingPillSelect
+                                label="Sort By"
+                                defaultValue="most-liked"
+                                className='max-w-[240px] w-full'
+                            >
+                                <option value="most-liked">Most Liked</option>
+                                <option value="newest">Newest</option>
+                            </FloatingPillSelect>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center items-center gap-6 mb-12'>
