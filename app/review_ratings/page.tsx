@@ -65,20 +65,20 @@ const ReviewRatings = () => {
     const [activeOtherSubFilter, setActiveOtherSubFilter] = useState("All");
     return (
         <main>
-            <section className='relative  py-16 font-gilroy-medium'>
-                <div className='max-w-6xl px-8 mx-auto relative'>
+            <section className='relative px-8 py-16 font-gilroy-medium'>
+                <div className='max-w-6xl  mx-auto relative'>
                     <img
                         src={"/review_ratings/review_ratings-bg.png"}
                         alt="Logo"
                         className='w-full h-auto object-cover'
                     />
-                    <h1 className='text-[88px] uppercase font-gilroy-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-white'>
+                    <h1 className='text-[88px] uppercase font-gilroy-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-white'>
                         Ratings & Reviews
                     </h1>
                 </div>
 
 
-                <div className="max-w-6xl px-8 mx-auto py-10 min-h-screen">
+                <div className="max-w-6xl mx-auto py-10 min-h-screen">
                     {/* Header */}
                     <div className="flex justify-between items-start mb-8">
                         <div>
@@ -98,9 +98,9 @@ const ReviewRatings = () => {
                             <button
                                 key={i}
                                 onClick={() => setActiveTab(tab)}
-                                className={`pb-2 transition-colors whitespace-nowrap ${activeTab === tab
-                                    ? "border-b-4 border-orange-500 text-black font-gilroy-semibold"
-                                    : "hover:text-black"
+                                className={`pb-2 transition-colors whitespace-nowrap font-gilroy-semibold ${activeTab === tab
+                                    ? "border-b-4 border-orange-500 text-black "
+                                    : "text-black"
                                     }`}
                             >
                                 {tab}

@@ -87,7 +87,7 @@ const AllOffers: React.FC = () => {
                                 className={`relative overflow-hidden rounded-2xl bg-white px-12 py-20 flex flex-col justify-between ${colSpan}`}
                             >
                                 {/* Content */}
-                                <div className={index === 0 ? "max-w-md relative z-50" : "relative z-50"}>
+                                <div className={`relative z-50 ${index === 0 ? "max-w-md" : ""} ${index >= 3 ? "-translate-y-8" : ""}`}>
                                     <h3 className="text-[20px] leading-[100%] font-gilroy-semibold text-gray-900">
                                         <LineReveal text={offer.title} />
                                     </h3>
