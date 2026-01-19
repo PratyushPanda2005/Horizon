@@ -95,7 +95,7 @@ export const LineReveal = ({
     return (
         <Tag ref={el} className="overflow-hidden">
             {text.split("\n").map((line, i) => (
-                <div key={i} className="line-wrapper overflow-hidden pb-1">
+                <div key={i} className="line-wrapper overflow-hidden">
                     <span className="line block">
                         {line}
                     </span>

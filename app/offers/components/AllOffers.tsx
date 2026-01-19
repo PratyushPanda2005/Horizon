@@ -26,7 +26,7 @@ const offers: Offer[] = [
             "Refer. Earn. Repeat. Travel benefits made better with friends.",
         cta: "Refer Now",
         image: "/offers/message-received.svg",
-        imageClass: "w-[220px] h-[220px] right-0 bottom-0 translate-y-[20%]",
+        imageClass: "w-[280px] h-[280px] right-0 bottom-0 translate-y-[20%]",
     },
     {
         title: "Tag & Earn Rewards",
@@ -34,21 +34,21 @@ const offers: Offer[] = [
             "Show off your adventures and unlock surprise rewards.",
         cta: "Tag Us Now",
         image: "/offers/advertising.svg",
-        imageClass: "w-[220px] h-[220px] right-6 top-6",
+        imageClass: "w-[280px] h-[240px] -right-6 bottom-4",
     },
     {
         title: "16th Night Reward",
         description: "Get 50% off on your 16th night!",
         cta: "Start Booking",
         image: "/offers/resting.svg",
-        imageClass: "w-[220px] h-[220px] right-0 bottom-0 ",
+        imageClass: "w-[180px] h-[180px] right-0 -bottom-3",
     },
     {
         title: "Group Booking Rewards",
         description: "Up to 50% off after 10 bookings!",
         cta: "Start Booking",
         image: "/offers/offer.svg",
-        imageClass: "w-[220px] h-[220px] right-0 bottom-0 translate-y-[20%]",
+        imageClass: "w-[180px] h-[180px] right-0 bottom-0 translate-y-[10%]",
     },
     {
         title: "Cruise Vouchers",
@@ -68,7 +68,7 @@ const AllOffers: React.FC = () => {
                     <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
                         <LineReveal text="All Offers" />
                     </h2>
-                    <p className="mt-2 text-base font-gilroy-medium">
+                    <p className="mt-2 text-lg font-gilroy-medium">
                         <LineReveal text="Discover the exclusive offers to make your next trip even better." />
                     </p>
                 </div>
@@ -88,11 +88,11 @@ const AllOffers: React.FC = () => {
                             >
                                 {/* Content */}
                                 <div className={index === 0 ? "max-w-md relative z-50" : "relative z-50"}>
-                                    <h3 className="text-lg font-gilroy-semibold text-gray-900">
+                                    <h3 className="text-[20px] leading-[100%] font-gilroy-semibold text-gray-900">
                                         <LineReveal text={offer.title} />
                                     </h3>
 
-                                    <p className={index === 0 ? "max-w-md relative z-50 mt-2 text-sm font-gilroy-medium" : "relative z-50 max-w-2xs mt-2 text-sm font-gilroy-medium"}>
+                                    <p className={index === 0 ? "max-w-md relative z-50 mt-2 text-base font-gilroy-medium" : "relative z-50 max-w-2xs mt-2 text-base font-gilroy-medium"}>
                                         <LineReveal text={offer.description} />
                                     </p>
 

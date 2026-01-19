@@ -41,8 +41,8 @@ const steps: Step[] = [
 
 const HowItWorks: React.FC = () => {
     return (
-        <section className="py-16 px-8">
-            <div className="mx-auto max-w-6xl ">
+        <section className="py-16">
+            <div className="mx-auto max-w-6xl px-8">
                 {/* Title */}
                 <h2 className="mb-10 text-center text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
                     <LineReveal text="How It Works" />
@@ -65,17 +65,17 @@ const HowItWorks: React.FC = () => {
                             </div>
 
                             {/* Step label */}
-                            <span className="mb-2 text-xs font-gilroy-semibold tracking-widest text-primary-orange">
+                            <span className="mb-2 text-sm font-gilroy-semibold tracking-widest text-primary-orange">
                                 {item.step}
                             </span>
 
                             {/* Title */}
-                            <h3 className=" text-lg font-gilroy-semibold text-gray-900">
+                            <h3 className=" text-xl font-gilroy-semibold text-gray-900">
                                 {item.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="max-w-[240px] text-sm font-gilroy-medium leading-relaxed text-gray-500">
+                            <p className="max-w-[240px] text-base font-gilroy-medium leading-relaxed text-gray-800">
                                 {item.description}
                             </p>
                         </div>

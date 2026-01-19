@@ -30,8 +30,8 @@ const slides = [
 const OffersPage = () => {
     return (
         <main>
-            <section className='relative px-8 pt-20 font-gilroy-medium'>
-                <div className='max-w-6xl mx-auto relative'>
+            <section className='relative  pt-20 font-gilroy-medium'>
+                <div className='max-w-6xl px-8 mx-auto relative'>
                     <img
                         src={"/offers/offers-bg.png"}
                         alt="Logo"
@@ -46,7 +46,7 @@ const OffersPage = () => {
                         </h2>
                     </div>
                 </div>
-                <div className='max-w-6xl mx-auto pt-10'>
+                <div className='max-w-6xl px-8 mx-auto pt-10'>
                     <p className='text-base font-gilroy-medium text-center'>
                         <LineReveal text="Refer your friends to join Phoenix Fly and both enjoy exclusive rewards. Discover new destinations, create unforgettable memories, and start referring today!" />
                     </p>
