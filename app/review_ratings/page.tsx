@@ -128,13 +128,13 @@ const ReviewRatings = () => {
 
                     {/* Sub-filters for "Others" */}
                     {activeTab === "Others" && (
-                        <div className="flex gap-4 mb-8 overflow-x-auto no-scrollbar pt-2">
+                        <div className="flex gap-2 mb-6 overflow-x-auto no-scrollbar">
                             {otherSubFilters.map((filter) => (
                                 <button
                                     key={filter}
                                     onClick={() => setActiveOtherSubFilter(filter)}
                                     className={cn(
-                                        "px-6 py-4 rounded-xl text-sm font-gilroy-semibold transition-all whitespace-nowrap flex items-center justify-center",
+                                        "px-6 py-4 rounded-lg text-sm font-gilroy-semibold transition-all whitespace-nowrap flex items-center justify-center",
                                         activeOtherSubFilter === filter
                                             ? "bg-[#FFEAD7] text-orange-600"
                                             : "bg-white text-gray-800"
