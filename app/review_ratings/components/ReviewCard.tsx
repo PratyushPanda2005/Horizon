@@ -33,7 +33,7 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
         <div className="bg-white rounded-2xl p-6 border border-gray-100 font-gilroy-medium">
             {/* Header */}
             <div className="flex items-center gap-3 mb-2">
-                <span className="bg-orange-500 text-white text-sm font-gilroy-bold px-3 py-1 rounded-md">
+                <span className="bg-orange-500 text-white text-base font-gilroy-bold px-4 py-1 rounded-md">
                     {review.rating} ★
                 </span>
                 <h3 className="text-[22px] leading-tight font-gilroy-semibold">{review.title}</h3>
@@ -42,7 +42,7 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
             <p className="text-lg tracking-[-0.02em] font-gilroy-semibold mb-3">{review.subtitle}</p>
 
             {/* Meta */}
-            <div className="flex flex-wrap items-center text-lg tracking-[-0.02em]  gap-2 mb-4 ">
+            <div className="flex flex-wrap items-center text-lg tracking-[-0.02em] gap-2 mb-4 ">
                 <img
                     src={review.authorImage || "/person.svg"}
                     className="w-8 h-8 rounded-full"
@@ -71,18 +71,18 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
             </p>
 
             {/* Images */}
-            <div className="flex gap-3 mb-5">
+            <div className="flex gap-2 mb-5">
                 {review.images.slice(0, 4).map((img, i) => (
                     <img
                         key={i}
                         src={img}
                         alt="review"
-                        className="w-24 h-24 rounded-lg object-cover"
+                        className="w-[125px] h-[125px] rounded-lg object-cover"
                     />
                 ))}
 
                 {review.images.length > 4 && (
-                    <div className="w-24 h-24 rounded-lg bg-black/80 flex items-center justify-center text-white font-gilroy-bold">
+                    <div className="w-[125px] h-[125px] rounded-lg bg-black/80 flex items-center justify-center text-white font-gilroy-bold">
                         5+
                     </div>
                 )}
@@ -101,7 +101,7 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
 
             {/* Replies Section */}
             {review.replies && review.replies.length > 0 && (
-                <div className="mt-6 pt-6 border-t border-gray-900/10">
+                <div className="mt-6 pt-4 border-t border-black">
                     <div className="flex justify-between items-center mb-4">
                         <h4 className="text-[22px] font-gilroy-semibold">Replies</h4>
                         <X size={24} className="cursor-pointer" />
@@ -117,15 +117,15 @@ const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
                                         alt={reply.author}
                                     />
                                     <div className="flex items-center gap-2">
-                                        <span className={`text-base font-gilroy-medium ${reply.isAdmin ? 'text-primary-orange' : ''}`}>
+                                        <span className={`text-lg font-gilroy-medium ${reply.isAdmin ? 'text-primary-orange' : ''}`}>
                                             {reply.author} {reply.isAdmin && <span className="text-primary-orange font-gilroy-medium">(Admin)</span>}
                                         </span>
                                         <span className="w-2 h-2 bg-[#bcbcbc] rounded-full"></span>
-                                        <span className="text-base font-gilroy-medium">{reply.date}</span>
+                                        <span className="text-lg font-gilroy-medium">{reply.date}</span>
                                     </div>
                                 </div>
 
-                                <p className="leading-relaxed text-sm mb-2 tracking-[-0.02em] font-gilroy-medium">
+                                <p className="leading-relaxed text-base mb-2 tracking-[-0.02em] font-gilroy-medium">
                                     {reply.description}
                                 </p>
                                 <div className="flex items-center gap-3">

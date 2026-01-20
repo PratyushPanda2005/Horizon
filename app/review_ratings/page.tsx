@@ -110,6 +110,7 @@ const ReviewRatings = () => {
                     <h1 className='text-[88px] uppercase font-gilroy-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-white'>
                         Ratings & Reviews
                     </h1>
+                    <div className='bg-gradient-to-t from-black/50 to-transparent rounded-2xl absolute bottom-0 left-0 w-full h-1/2 '></div>
                 </div>
 
 
@@ -118,17 +119,17 @@ const ReviewRatings = () => {
                     <div className="flex justify-between items-start mb-10">
                         <div>
                             <h1 className="text-[42px] leading-[1.2] tracking-[-0.02em] font-gilroy-semibold">User Rating & Reviews</h1>
-                            <p className=" font-gilroy-medium">
+                            <p className="text-lg font-gilroy-medium">
                                 Discover The Collective Wisdom Of The Crowd Through User Ratings And Reviews
                             </p>
                         </div>
-                        <Button className="bg-orange-500 text-white px-12 h-12 rounded-lg font-gilroy-semibold hover:bg-orange-600">
+                        <Button className="bg-orange-500 text-white px-12 h-[50px] rounded-lg font-gilroy-semibold hover:bg-orange-600">
                             Write A Review
                         </Button>
                     </div>
 
                     {/* Tabs */}
-                    <div className="flex justify-between w-full border-b border-gray-400 mb-4 text-sm font-gilroy-semibold text-gray-600 overflow-x-auto no-scrollbar">
+                    <div className="flex justify-between w-full border-b border-gray-400 mb-4 text-base font-gilroy-semibold text-gray-600 overflow-x-auto no-scrollbar">
                         {tabs.map((tab, i) => (
                             <button
                                 key={i}
@@ -144,7 +145,7 @@ const ReviewRatings = () => {
                     </div>
 
                     {/* Filters */}
-                    <div className="flex gap-3 mb-8 ">
+                    <div className="flex gap-[10px] mb-8 ">
                         <FloatingPillInput
                             label="Search By Destination, Hotel or Package"
                             defaultValue="Manali"

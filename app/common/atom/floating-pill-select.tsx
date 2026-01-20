@@ -17,7 +17,7 @@ export function FloatingPillSelect({
     return (
         <div className={cn("relative max-w-[270px]", className)}>
             {/* Floating label */}
-            <span className="absolute top-3 left-5 text-xs text-gray-400 pointer-events-none z-10 font-gilroy-medium">
+            <span className="absolute top-3 left-5 text-sm text-gray-400 pointer-events-none z-10 font-gilroy-medium">
                 {label}
             </span>
 
@@ -32,7 +32,7 @@ export function FloatingPillSelect({
             bg-white
             pl-5 pr-11
             pt-7
-            text-sm
+            text-base
             font-gilroy-medium
             outline-none
             border-none

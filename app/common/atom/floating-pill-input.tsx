@@ -12,7 +12,7 @@ export const FloatingPillInput = React.forwardRef<
 >(({ label, className, ...props }, ref) => {
     return (
         <div className="relative w-full">
-            <span className="absolute top-3 left-7 text-xs text-gray-400 pointer-events-none font-gilroy-medium">
+            <span className="absolute top-3 left-7 text-sm text-gray-400 pointer-events-none font-gilroy-medium">
                 {label}
             </span>
 
@@ -22,7 +22,7 @@ export const FloatingPillInput = React.forwardRef<
                     `
           w-full h-16 rounded-full
           px-7 pt-6
-          text-sm
+          text-base
           outline-none
           focus:border-gray-300
           bg-white
