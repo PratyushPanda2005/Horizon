@@ -117,7 +117,7 @@ const DestinationIndia = () => {
     return (
         <main>
             <Hero />
-            <section className="w-full py-16 lg:py-20">
+            <section className="w-full py-20">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <h2 className="text-3xl md:text-4xl lg:text-[52px] font-gilroy-semibold text-center mb-1">
                         Explore <span className="text-primary-orange">India</span>
@@ -128,7 +128,7 @@ const DestinationIndia = () => {
                     <div>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
                             <div className="relative max-w-md w-full group">
-                                <span className="absolute top-3 left-7 text-xs text-gray-400 pointer-events-none font-gilroy-medium">
+                                <span className="absolute top-3 left-7 text-sm text-gray-400 pointer-events-none font-gilroy-medium">
                                     Search here
                                 </span>
 
@@ -157,7 +157,7 @@ const DestinationIndia = () => {
                             <FloatingPillSelect
                                 label="Sort By"
                                 defaultValue="most-liked"
-                                className='max-w-[240px] w-full'
+                                className='w-full md:max-w-[240px]'
                             >
                                 <option value="most-liked">Most Liked</option>
                                 <option value="newest">Newest</option>
