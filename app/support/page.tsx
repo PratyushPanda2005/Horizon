@@ -17,9 +17,11 @@ import TermsAndConditions from "./components/TermsAndConditions";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PaymentsContent from "./components/PaymentsContent";
 import { LineReveal } from "../utils/animation";
+import { Search } from "lucide-react";
 
 const SupportPage = () => {
     const [activeCategory, setActiveCategory] = useState("Contact Us");
+    const [searchQuery, setSearchQuery] = useState("");
 
     const renderContent = () => {
         switch (activeCategory) {
@@ -64,9 +66,9 @@ const SupportPage = () => {
     };
 
     return (
-        <main className="bg-[#F8F9FA] min-h-screen pb-20">
+        <main className="min-h-screen pb-20 px-4 md:px-8">
             <section className='pt-20 font-gilroy-medium'>
-                <div className='max-w-6xl px-4 md:px-8 mx-auto '>
+                <div className='max-w-6xl mx-auto '>
                     <div className="relative rounded-[2rem] overflow-hidden">
                         <img
                             src={"/support-hero.png"}
@@ -74,7 +76,7 @@ const SupportPage = () => {
                             className='w-full h-auto object-cover'
                         />
                         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-white'>
-                            <h1 className='text-[88px] leading-[100%] uppercase font-gilroy-bold'>
+                            <h1 className='text-[88px] leading-[100%] uppercase font-gilroy-semibold'>
                                 <LineReveal text="Support" />
                             </h1>
                         </div>
@@ -83,10 +85,22 @@ const SupportPage = () => {
                 </div>
             </section>
 
+            <div className="max-w-6xl mx-auto mt-6">
+                {/* Search Bar */}
+                <div className="flex justify-center mb-9">
+                    <div className="relative w-full max-w-[500px]">
+                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#16242A]/60 w-5 h-5" />
+                        <input
+                            type="text"
+                            placeholder="Search in Support"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="w-full h-14 pl-12 pr-8 rounded-full bg-white text-[15px] font-gilroy-medium text-[#16242A] focus:outline-none placeholder:text-[#16242A]/40 border-none shadow-none"
+                        />
+                    </div>
+                </div>
 
-            <div className="max-w-6xl mx-auto px-4 md:px-8 mt-24">
-
-                <div className="flex flex-col md:flex-row gap-12 items-start">
+                <div className="flex flex-col md:flex-row gap-8 items-start">
                     <SupportSidebar activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
                     {renderContent()}
                 </div>

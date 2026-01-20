@@ -25,9 +25,9 @@ const SupportSidebar = ({ activeCategory, setActiveCategory }: { activeCategory:
                 <button
                     key={category}
                     onClick={() => setActiveCategory(category)}
-                    className={`w-full text-left px-6 py-4 rounded-lg font-gilroy-semibold text-sm transition-all ${category === activeCategory
+                    className={`w-full text-left px-6 py-4 rounded-lg font-gilroy-semibold text-base transition-all ${category === activeCategory
                         ? "bg-[#FFEAD8] text-primary-orange"
-                        : "bg-white text-gray-800 hover:bg-gray-50 border border-gray-100"
+                        : "bg-white text-gray-800 hover:bg-[#FFEAD8] hover:text-primary-orange border border-gray-100"
                         }`}
                 >
                     {category}

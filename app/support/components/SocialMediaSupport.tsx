@@ -5,16 +5,16 @@ import { LineReveal } from "@/app/utils/animation";
 
 const SocialMediaSupport = () => {
     return (
-        <div className="flex-1 max-w-2xl">
+        <div className="flex-1 max-w-[720px]">
             <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
                 Social Media Support
             </h2>
 
-            <div className="text-base font-gilroy-medium text-[#16242A] mb-8 leading-relaxed">
+            <div className="text-base font-gilroy-medium text-[#16242A] mb-3 leading-relaxed">
                 <LineReveal text="Reach out to us through social media channels." />
             </div>
 
-            <div className="flex gap-1 mb-8">
+            <div className="flex gap-1 mb-3">
                 <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                     <img src="/icons/ic_baseline-facebook.svg" alt="Facebook" className="" />
                 </a>

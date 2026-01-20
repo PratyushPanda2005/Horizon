@@ -5,17 +5,17 @@ import { LineReveal } from "@/app/utils/animation";
 
 const ContactUsContent = () => {
     return (
-        <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
+        <div className="flex-1 max-w-[720px]">
+            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-3">
                 Contact Us
             </h2>
 
-            <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed mb-10">
+            <div className="text-base font-gilroy-semibold text-[#16242A] leading-relaxed mb-6">
                 <LineReveal text="We value your feedback and are always here to help you with any questions or concerns you may have. Please feel free to contact us using any of the methods below:" />
             </div>
 
             {/* Email Section */}
-            <div className="mb-8">
+            <div className="mb-10">
                 <div className="flex items-center gap-2 mb-2">
 
                     <img src="/icons/majesticons_mail.svg" alt="Email" className="" />
@@ -39,7 +39,7 @@ const ContactUsContent = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="mb-12">
+            <div className="mb-10">
                 <div className="flex items-center gap-2 mb-2">
 
                     <img src="/icons/fluent_contact-card-48-filled.svg" alt="Form" className="" />
@@ -50,8 +50,8 @@ const ContactUsContent = () => {
                     <LineReveal text="Fill out our contact form and we'll respond to your message within 10-15 minutes. Our contact form is available 24 hours a day." />
                 </div>
 
-                <form className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form className="space-y-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         <input
                             type="text"
                             placeholder="First Name"
@@ -68,7 +68,7 @@ const ContactUsContent = () => {
                         placeholder="Your Email"
                         className="w-full px-5 py-4 rounded-xl bg-white border border-gray-100 focus:ring-1 focus:ring-primary-orange outline-none font-gilroy-medium text-base transition-all"
                     />
-                    <div className="flex gap-4">
+                    <div className="flex gap-2">
                         <div className="flex items-center gap-2 px-4 py-4 rounded-xl bg-white border border-gray-100 w-24">
                             <img src="/icons/mdi_internet.svg" alt="Globe" className="text-[#FF6A00]" />
                             <span className="text-sm font-gilroy-medium text-[#16242A]">
@@ -82,11 +82,11 @@ const ContactUsContent = () => {
                     </div>
                     <textarea
                         placeholder="Your Comment (Max Limit 150 Words)"
-                        rows={5}
+                        rows={3}
                         className="w-full px-5 py-4 rounded-xl bg-white border border-gray-100 focus:ring-1 focus:ring-primary-orange outline-none font-gilroy-medium text-base transition-all resize-none"
                     ></textarea>
 
-                    <button className="w-full md:w-fit py-3.5 px-12 bg-[#FF6A00] text-white rounded-xl font-gilroy-semibold text-sm hover:bg-[#e96f21] transition-all self-center md:mx-auto block mt-4">
+                    <button className="w-full md:w-full py-3.5 max-w-2xs bg-[#FF6A00] text-white rounded-lg font-gilroy-semibold text-sm hover:bg-[#e96f21] transition-all self-center md:mx-auto block mt-4">
                         Contact Us
                     </button>
                 </form>
@@ -98,7 +98,7 @@ const ContactUsContent = () => {
                     <img src="/icons/mdi_internet.svg" alt="Social" className="" />
                     <h3 className="text-2xl font-gilroy-semibold text-[#16242A]">Social Media</h3>
                 </div>
-                <div className="text-base font-gilroy-medium text-[#16242A] mb-6 leading-relaxed">
+                <div className="text-base font-gilroy-medium text-[#16242A] mb-4 leading-relaxed">
                     <LineReveal text="Reach out to us through social media channels." />
                 </div>
 
@@ -120,8 +120,13 @@ const ContactUsContent = () => {
                     </a>
                 </div>
 
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed mb-10">
                     <LineReveal text="Our social media accounts are monitored and we aim to respond to direct messages within 5-10 minutes." />
+                </div>
+
+
+                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                    <LineReveal text="Our team is dedicated to providing you with the best possible customer service. If you have any feedback or suggestions on how we can improve our services, we'd love to hear from you." />
                 </div>
             </div>
         </div>

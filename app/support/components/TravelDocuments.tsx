@@ -5,12 +5,12 @@ import { LineReveal } from "@/app/utils/animation";
 
 const TravelDocuments = () => {
     return (
-        <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-8">
+        <div className="flex-1 max-w-[720px]">
+            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
                 Travel Documents
             </h2>
 
-            <div className="space-y-10">
+            <div className="space-y-6">
                 <section>
                     <h3 className="text-xl font-gilroy-semibold text-primary-orange mb-2">Passports</h3>
                     <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
