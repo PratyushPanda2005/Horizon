@@ -16,17 +16,17 @@ const TrendingPackages = () => {
 
                 {/* Heading */}
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl font-gilroy-semibold text-gray-900 mb-2">
+                    <h2 className="text-2xl md:text-3xl lg:text-[42px] tracking-[-0.02em] font-gilroy-semibold text-gray-900 mb-2">
                         <LineReveal text="Explore All Travel Packages In One Place" />
                     </h2>
-                    <p className="text- font-gilroy-medium text-sm">
+                    <p className="text-lg tracking-[-0.02em] font-gilroy-medium">
                         <LineReveal text="Discover all domestic and international trips tailored for every kind of traveler." />
                     </p>
                 </div>
 
                 {/* Subheading + Nav */}
                 <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-base md:text-2xl font-gilroy-semibold text-gray-900">
+                    <h3 className="text-base md:text-2xl tracking-[-0.02em] font-gilroy-semibold text-gray-900">
                         <LineReveal text="Trending Trips Everyone's Booking" />
                     </h3>
 
