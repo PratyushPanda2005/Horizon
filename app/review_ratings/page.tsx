@@ -21,12 +21,13 @@ const reviews: Review[] = [
         title: "Excellent",
         subtitle: "Staycation At Novotel | Goa | Nature Travel",
         author: "Tarun Singh",
+        authorImage: "/person.svg",
         date: "Jul 08, 2023",
         verified: true,
         category: "Family",
         stay: "2-Night Stay",
         description:
-            "This was my third stay at Novotel and I am not at all disappointed. I just loved every bit of my stay at this hotel. Such a wonderful property and humble staff. They have especially the restaurant and chef himself.",
+            "This Was My Third Stay At Novatel And I Am Not At All Disappointed. I Just Loved Every Bit Of My Stay At This Hotel Such A Wonderful Property And Humble Staff They Have Especially The Restaurant And Chef Himself.",
         images: [
             "https://images.unsplash.com/photo-1501117716987-c8e2a51f14c7",
             "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
@@ -36,7 +37,41 @@ const reviews: Review[] = [
         ],
         likes: 15,
         dislikes: 0
-    }
+    },
+    {
+        rating: 5,
+        title: "Excellent",
+        subtitle: "Staycation At Novotel | Goa | Nature Travel",
+        author: "Tarun Singh",
+        authorImage: "/person.svg",
+        date: "Jul 08, 2023",
+        verified: true,
+        category: "Family",
+        stay: "2-Night Stay",
+        description:
+            "This Was My Third Stay At Novatel And I Am Not At All Disappointed. I Just Loved Every Bit Of My Stay At This Hotel Such A Wonderful Property And Humble Staff They Have Especially The Restaurant And Chef Himself.",
+        images: [
+            "https://images.unsplash.com/photo-1501117716987-c8e2a51f14c7",
+            "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+            "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+            "extra"
+        ],
+        likes: 15,
+        dislikes: 0,
+        replies: [
+            {
+                author: "Phoenix Fly",
+                isAdmin: true,
+                authorImage: "/person.svg",
+                date: "Jul 08, 2023",
+                description: "Thanks A Lot For Using Our Services. We Would Love To Offer Our Services Again To Ensure Your Seamless Travel Experience!",
+                likes: 15,
+                dislikes: 0
+            }
+        ]
+    },
+
 ];
 
 const tabs = [
@@ -80,9 +115,9 @@ const ReviewRatings = () => {
 
                 <div className="max-w-6xl mx-auto py-10 min-h-screen">
                     {/* Header */}
-                    <div className="flex justify-between items-start mb-8">
+                    <div className="flex justify-between items-start mb-10">
                         <div>
-                            <h1 className="text-[42px] leading-[1.3] tracking-[-0.02em] font-gilroy-semibold">User Rating & Reviews</h1>
+                            <h1 className="text-[42px] leading-[1.2] tracking-[-0.02em] font-gilroy-semibold">User Rating & Reviews</h1>
                             <p className=" font-gilroy-medium">
                                 Discover The Collective Wisdom Of The Crowd Through User Ratings And Reviews
                             </p>
@@ -109,7 +144,7 @@ const ReviewRatings = () => {
                     </div>
 
                     {/* Filters */}
-                    <div className="flex gap-4 mb-8 ">
+                    <div className="flex gap-3 mb-8 ">
                         <FloatingPillInput
                             label="Search By Destination, Hotel or Package"
                             defaultValue="Manali"
@@ -148,7 +183,7 @@ const ReviewRatings = () => {
 
 
                     {/* Review Cards */}
-                    <div className="space-y-6">
+                    <div className="space-y-4">
                         {reviews.map((review, index) => (
                             <ReviewCard key={index} review={review} />
                         ))}
