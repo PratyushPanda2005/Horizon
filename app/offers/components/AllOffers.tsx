@@ -54,7 +54,7 @@ const offers: Offer[] = [
         title: "Cruise Vouchers",
         description: "Get INR 1000 cruise voucher after 10 bookings.",
         cta: "Start Booking",
-        image: "/offers/message.svg",
+        image: "/offers/Message.svg",
         imageClass: "w-[220px] h-[220px] right-0 bottom-0 translate-y-[10%]",
     },
 ];
@@ -84,7 +84,7 @@ const AllOffers: React.FC = () => {
                         return (
                             <div
                                 key={index}
-                                className={`relative overflow-hidden rounded-2xl bg-white px-12 py-20 flex flex-col justify-between ${colSpan}`}
+                                className={`relative overflow-hidden rounded-2xl bg-white px-12 py-[74px] flex flex-col justify-between ${colSpan}`}
                             >
                                 {/* Content */}
                                 <div className={`relative z-50 ${index === 0 ? "max-w-md" : ""} ${index >= 3 ? "-translate-y-8" : ""}`}>

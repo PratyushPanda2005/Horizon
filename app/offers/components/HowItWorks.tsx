@@ -14,28 +14,28 @@ const steps: Step[] = [
         title: "Make Bookings",
         description:
             "Book from our multiple range of packages curated for you.",
-        icon: "/offers/steps/step1.svg",
+        icon: "/offers/img 1.svg",
     },
     {
         step: "STEP 2",
         title: "Earn Reward Points",
         description:
             "Earn rewards points on every booking you make with us.",
-        icon: "/offers/steps/step2.svg",
+        icon: "/offers/img 2.svg",
     },
     {
         step: "STEP 3",
         title: "Redeem Rewards",
         description:
             "Redeem 100% points on your next travel booking.",
-        icon: "/offers/steps/step3.svg",
+        icon: "/offers/img 3.svg",
     },
     {
         step: "STEP 4",
         title: "Keep Earning More!",
         description:
             "Continue to earn reward points on every booking.",
-        icon: "/offers/steps/step4.svg",
+        icon: "/offers/img 4.svg",
     },
 ];
 
@@ -56,13 +56,11 @@ const HowItWorks: React.FC = () => {
                             className="flex flex-col items-center text-center"
                         >
                             {/* Icon */}
-                            <div className="mb-6 flex h-36 w-36 items-center justify-center rounded-full bg-[#e6f4fb]">
-                                <img
-                                    src={item.icon}
-                                    alt={item.title}
-                                    className="object-contain w-32 h-32"
-                                />
-                            </div>
+                            <img
+                                src={item.icon}
+                                alt={item.title}
+                                className="object-contain"
+                            />
 
                             {/* Step label */}
                             <span className="mb-2 text-sm font-gilroy-semibold tracking-widest text-primary-orange">
