@@ -44,7 +44,7 @@ const HowItWorks: React.FC = () => {
         <section className="py-16 px-8">
             <div className="mx-auto max-w-6xl">
                 {/* Title */}
-                <h2 className="mb-10 text-center text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
+                <h2 className="mb-10 text-center text-3xl md:text-4xl lg:text-[42px] font-gilroy-semibold text-gray-900">
                     <LineReveal text="How It Works" />
                 </h2>
 

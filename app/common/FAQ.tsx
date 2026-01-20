@@ -29,16 +29,13 @@ export default function FAQ() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-12">
+        <section className="py-[30px]">
             <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
-                <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-[#16242A] mb-3">
+                <h2 className="text-3xl md:text-4xl lg:text-[42px] font-gilroy-semibold text-[#16242A] mb-3">
                     <LineReveal text="Frequently Asked Questions" />
                 </h2>
-                <p className="text-sm md:text-base font-gilroy-medium mb-14">
-                    <LineReveal text="Have any questions? Find all your answers in the frequently asked questions." />
-                </p>
 
-                <div className="space-y-4 text-left">
+                <div className="space-y-3 text-left mt-[30px]">
                     {faqs.map((item, index) => {
                         const isOpen = activeIndex === index;
 

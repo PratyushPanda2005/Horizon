@@ -32,11 +32,11 @@ export default function HeroSlider({
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold mb-3 title-heading">
+                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-gilroy-semibold mb-3 title-heading">
                         <LineReveal text={heading} />
                     </h2>
                     {subheading && (
-                        <p className="text-sm md:text-base font-gilroy-medium sub-title">
+                        <p className="text-sm md:text-base lg:text-lg font-gilroy-medium sub-title">
                             <LineReveal text={subheading} />
                         </p>
                     )}
@@ -55,7 +55,7 @@ export default function HeroSlider({
                 >
                     {slides.map((slide, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="relative h-[335px] md:h-[360px]">
+                            <div className="relative h-[335px] md:h-[374px]">
                                 {/* Background */}
                                 <img
                                     src={slide.image}

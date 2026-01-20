@@ -46,7 +46,7 @@ const OffersPage = () => {
                         </h2>
                     </div>
                 </div>
-                <div className='max-w-6xl mx-auto pt-10'>
+                <div className='max-w-6xl mx-auto pt-8'>
                     <p className='text-lg font-gilroy-medium text-center'>
                         <LineReveal text="Refer your friends to join Phoenix Fly and both enjoy exclusive rewards. Discover new destinations, create unforgettable memories, and start referring today!" />
                     </p>

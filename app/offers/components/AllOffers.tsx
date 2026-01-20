@@ -65,7 +65,7 @@ const AllOffers: React.FC = () => {
             <div className="mx-auto max-w-6xl">
                 {/* Header */}
                 <div className="mb-12 text-center">
-                    <h2 className="text-3xl md:text-4xl font-gilroy-semibold text-gray-900">
+                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-gilroy-semibold text-gray-900">
                         <LineReveal text="All Offers" />
                     </h2>
                     <p className="mt-2 text-lg font-gilroy-medium">
@@ -84,7 +84,7 @@ const AllOffers: React.FC = () => {
                         return (
                             <div
                                 key={index}
-                                className={`relative overflow-hidden rounded-2xl bg-white px-12 py-[74px] flex flex-col justify-between ${colSpan}`}
+                                className={`relative overflow-hidden rounded-2xl bg-white px-12 py-[75px] flex flex-col justify-between ${colSpan}`}
                             >
                                 {/* Content */}
                                 <div className={`relative z-50 ${index === 0 ? "max-w-md" : ""} ${index >= 3 ? "-translate-y-8" : ""}`}>
@@ -96,7 +96,7 @@ const AllOffers: React.FC = () => {
                                         <LineReveal text={offer.description} />
                                     </p>
 
-                                    <button className="mt-6 inline-flex items-center rounded-lg bg-primary-orange px-4 py-2 text-sm font-gilroy-semibold text-white hover:opacity-90 transition">
+                                    <button className="mt-6 inline-flex items-center rounded-lg bg-primary-orange px-4 h-10 text-sm font-gilroy-semibold text-white hover:opacity-90 transition">
                                         {offer.cta}
                                     </button>
                                 </div>
