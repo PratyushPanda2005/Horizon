@@ -30,7 +30,7 @@ export interface Review {
 
 const ReviewCard: React.FC<{ review: Review }> = ({ review }) => {
     return (
-        <div className="bg-white rounded-2xl p-6 border border-gray-100 font-gilroy-medium">
+        <div className="bg-white rounded-2xl py-5 px-6 border border-gray-100 font-gilroy-medium">
             {/* Header */}
             <div className="flex items-center gap-3 mb-2">
                 <span className="bg-orange-500 text-white text-base font-gilroy-bold px-4 py-1 rounded-md">
