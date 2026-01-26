@@ -17,11 +17,11 @@ const PrivacyPolicy = () => {
 
     return (
         <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-8">
+            <h2 className="text-[42px] leading-[100%] font-gilroy-semibold text-[#16242A] mb-4">
                 Privacy Policy
             </h2>
 
-            <div className="space-y-6 text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+            <div className="space-y-5 text-lg tracking-[-0.02em] font-gilroy-medium text-[#16242A] leading-[28px]">
                 {points.map((point, index) => (
                     <div key={index} className="flex gap-4">
                         <div className="mt-2.5 w-1 h-1 rounded-full bg-black/80 shrink-0" />

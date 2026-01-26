@@ -6,28 +6,28 @@ import { LineReveal } from "@/app/utils/animation";
 const TravelDocuments = () => {
     return (
         <div className="flex-1 max-w-[720px]">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
+            <h2 className="text-[42px] leading-[100%] font-gilroy-semibold text-[#16242A] mb-4">
                 Travel Documents
             </h2>
 
             <div className="space-y-6">
                 <section>
-                    <h3 className="text-xl font-gilroy-semibold text-primary-orange mb-2">Passports</h3>
-                    <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                    <h3 className="text-2xl font-gilroy-semibold text-primary-orange mb-2">Passports</h3>
+                    <div className="text-lg font-gilroy-medium text-[#16242A] leading-relaxed">
                         <LineReveal text="A valid passport with at least six months validity beyond the date of return is required for international travel to India." />
                     </div>
                 </section>
 
                 <section>
-                    <h3 className="text-xl font-gilroy-semibold text-primary-orange mb-2">Domestic Travelers within India</h3>
-                    <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                    <h3 className="text-2xl font-gilroy-semibold text-primary-orange mb-2">Domestic Travelers within India</h3>
+                    <div className="text-lg font-gilroy-medium text-[#16242A] leading-relaxed">
                         <LineReveal text="A valid government-issued ID proof such as Aadhaar Card, Voter ID Card, or Passport is required." />
                     </div>
                 </section>
 
                 <section>
-                    <h3 className="text-xl font-gilroy-semibold text-primary-orange mb-2">Visas</h3>
-                    <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                    <h3 className="text-2xl font-gilroy-semibold text-primary-orange mb-2">Visas</h3>
+                    <div className="text-lg font-gilroy-medium text-[#16242A] leading-relaxed">
                         <LineReveal text="A travel visa grants international travelers the right to enter and depart a specific country for a specific period of time. It is an essential document that must be obtained before your trip to avoid any travel delays or issues." />
                     </div>
                 </section>

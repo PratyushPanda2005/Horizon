@@ -22,12 +22,12 @@ const ReferAndEarn = () => {
     ];
 
     return (
-        <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
+        <div className="flex-1 max-w-3xl bg-white p-6 rounded-2xl">
+            <h2 className="text-[42px] leading-[100%] tracking-[-0.02em] font-gilroy-semibold text-[#16242A] mb-4">
                 Refer & Earn Rewards
             </h2>
 
-            <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed mb-8">
+            <div className="text-lg font-gilroy-semibold text-[#16242A] tracking-[-0.02em] mb-6">
                 <LineReveal text="Earn rewards every time you refer a friend! Track your progress, share your link or code, and enjoy the benefits together." />
             </div>
 

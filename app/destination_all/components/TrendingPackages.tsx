@@ -57,7 +57,7 @@ const TrendingPackages = () => {
                 >
                     {trips.map((_, i) => (
                         <SwiperSlide key={i}>
-                            <div className="relative rounded-2xl overflow-hidden h-[320px] lg:h-[384px] text-white">
+                            <div className="relative rounded-2xl overflow-hidden h-[323px] lg:h-[384px] text-white">
 
                                 {/* Image */}
                                 <img

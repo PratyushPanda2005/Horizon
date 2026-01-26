@@ -6,11 +6,11 @@ import { LineReveal } from "@/app/utils/animation";
 const ContactUsContent = () => {
     return (
         <div className="flex-1 max-w-[720px]">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-3">
+            <h2 className="text-[42px] leading-[100%] font-gilroy-semibold text-[#16242A] mb-3">
                 Contact Us
             </h2>
 
-            <div className="text-base font-gilroy-semibold text-[#16242A] leading-relaxed mb-6">
+            <div className="text-lg font-gilroy-semibold tracking-[-0.02em] text-[#16242A] leading-relaxed mb-6">
                 <LineReveal text="We value your feedback and are always here to help you with any questions or concerns you may have. Please feel free to contact us using any of the methods below:" />
             </div>
 
@@ -22,7 +22,7 @@ const ContactUsContent = () => {
 
                     <h3 className="text-2xl font-gilroy-semibold text-[#16242A]">Email</h3>
                 </div>
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed pl-1">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] leading-relaxed pl-1">
                     <LineReveal text="Send us an email at phoenixflytravel@gmail.com and we'll get back to you as soon as possible. Our email support team aims to respond within 24 hours." />
                 </div>
             </div>
@@ -33,7 +33,7 @@ const ContactUsContent = () => {
                     <img src="/icons/solar_phone-bold.svg" alt="Phone" className="" />
                     <h3 className="text-2xl font-gilroy-semibold text-[#16242A]">Phone</h3>
                 </div>
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed pl-1">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] leading-relaxed pl-1">
                     <LineReveal text="Call us at +917610584428 anytime and we'll be happy to assist you. Our phone support team is available 24 hours a day." />
                 </div>
             </div>
@@ -46,7 +46,7 @@ const ContactUsContent = () => {
 
                     <h3 className="text-2xl font-gilroy-semibold text-[#16242A]">Contact Form</h3>
                 </div>
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed pl-1 mb-6">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] leading-relaxed pl-1 mb-6">
                     <LineReveal text="Fill out our contact form and we'll respond to your message within 10-15 minutes. Our contact form is available 24 hours a day." />
                 </div>
 
@@ -96,36 +96,36 @@ const ContactUsContent = () => {
             <div>
                 <div className="flex items-center gap-2 mb-4">
                     <img src="/icons/mdi_internet.svg" alt="Social" className="" />
-                    <h3 className="text-2xl font-gilroy-semibold text-[#16242A]">Social Media</h3>
+                    <h3 className="text-2xl font-gilroy-semibold tracking-[-0.02em] text-[#16242A]">Social Media</h3>
                 </div>
-                <div className="text-base font-gilroy-medium text-[#16242A] mb-4 leading-relaxed">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] mb-4 leading-relaxed">
                     <LineReveal text="Reach out to us through social media channels." />
                 </div>
 
-                <div className="flex gap-1 mb-4">
-                    <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
+                <div className="flex gap-6 mb-4">
+                    <a href="#" className="border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                         <img src="/icons/ic_baseline-facebook.svg" alt="Facebook" className="" />
                     </a>
-                    <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
+                    <a href="#" className="border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                         <img src="/icons/fe_instagram.svg" alt="Instagram" className="" />
                     </a>
-                    <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
+                    <a href="#" className="border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                         <img src="/icons/ant-design_whats-app-outlined.svg" alt="WhatsApp" className="" />
                     </a>
-                    <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
+                    <a href="#" className="border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                         <img src="/icons/mdi_twitter.svg" alt="Twitter" className="" />
                     </a>
-                    <a href="#" className="p-2 border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
+                    <a href="#" className="border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">
                         <img src="/icons/ri_youtube-fill.svg" alt="YouTube" className="" />
                     </a>
                 </div>
 
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed mb-10">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] leading-relaxed mb-10">
                     <LineReveal text="Our social media accounts are monitored and we aim to respond to direct messages within 5-10 minutes." />
                 </div>
 
 
-                <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed">
+                <div className="text-lg font-gilroy-medium tracking-[-0.02em] text-[#16242A] leading-relaxed">
                     <LineReveal text="Our team is dedicated to providing you with the best possible customer service. If you have any feedback or suggestions on how we can improve our services, we'd love to hear from you." />
                 </div>
             </div>

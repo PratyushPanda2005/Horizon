@@ -22,27 +22,26 @@ const TagAndEarn = () => {
     ];
 
     return (
-        <div className="flex-1 max-w-2xl">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
+        <div className="flex-1 max-w-3xl bg-white p-6 rounded-2xl">
+            <h2 className="text-[42px] leading-[100%] tracking-[-0.02em] font-gilroy-semibold text-[#16242A] mb-6">
                 Tag & Earn Rewards
             </h2>
 
-            <div className="text-base font-gilroy-medium text-[#16242A] leading-relaxed mb-8">
+            <div className="text-lg font-gilroy-semibold text-[#16242A] tracking-[-0.02em] mb-4">
                 <LineReveal text="Tag us in your social media posts or stories and enjoy rewards every time, from bonus points to a family dinner." />
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <button className="bg-[#16242A] text-white px-8 py-4 rounded-xl font-gilroy-semibold text-sm hover:opacity-90 transition-all flex-1">
+            <div className="flex flex-col sm:flex-row gap-3 mb-12">
+                <button className="bg-[#16242A] text-white px-8 py-4 rounded-lg font-gilroy-semibold text-sm hover:opacity-90 transition-all flex-1">
                     Explain How It Works
                 </button>
-                <button className="bg-[#16242A] text-white px-8 py-4 rounded-xl font-gilroy-semibold text-sm hover:opacity-90 transition-all flex-1">
+                <button className="bg-[#16242A] text-white px-8 py-4 rounded-lg font-gilroy-semibold text-sm hover:opacity-90 transition-all flex-1">
                     View My Points / Progress
                 </button>
             </div>
-
             <div className="space-y-4">
                 <SupportSectionAccordion title="FAQs">
-                    <SupportAccordion title="" items={faqs} variant="plus-minus" isFlat={true} />
+                    <SupportAccordion items={faqs} variant="plus-minus" isFlat={true} />
                 </SupportSectionAccordion>
 
                 <SupportSectionAccordion title="Terms & Conditions">

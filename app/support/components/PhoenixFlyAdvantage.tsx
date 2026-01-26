@@ -31,7 +31,7 @@ const PhoenixFlyAdvantage = () => {
 
     return (
         <div className="flex-1 max-w-[720px]">
-            <h2 className="text-4xl font-gilroy-semibold text-[#16242A] mb-4">
+            <h2 className="text-[42px] leading-[100%] font-gilroy-semibold tracking-[-0.02em] text-[#16242A] mb-4">
                 Phoenix Fly Advantage
             </h2>
 
@@ -43,7 +43,7 @@ const PhoenixFlyAdvantage = () => {
                     >
                         <button
                             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                            className="w-full flex items-center justify-between p-6 text-left"
+                            className="w-full flex items-center justify-between px-5 py-6 text-left"
                         >
                             <div className="flex items-center gap-4">
                                 <img
@@ -51,18 +51,18 @@ const PhoenixFlyAdvantage = () => {
                                     alt={item.title}
                                     className="h-5 w-5 text-primary-orange"
                                 />
-                                <span className="text-xl font-gilroy-semibold text-primary-orange">
+                                <span className="text-2xl font-gilroy-semibold text-primary-orange">
                                     {item.title}
                                 </span>
                             </div>
                             <ChevronDown
-                                className={`h-5 w-5 text-gray-400 transition-transform ${openIndex === index ? "rotate-180" : ""
+                                className={`h-5 w-5 text-[#16242A] transition-transform ${openIndex === index ? "rotate-180" : ""
                                     }`}
                             />
                         </button>
                         {openIndex === index && (
-                            <div className="px-6 pb-6 text-sm font-gilroy-medium text-gray-600 border-t border-gray-50 pt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <div className="px-5 pb-6 text-lg tracking-[-0.02em] font-gilroy-medium text-[#16242A] border-t border-gray-50 ">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquam odit beatae illum, dolore quisquam a sit deleniti dolorem error asperiores nesciunt reiciendis possimus, sunt ipsum.
                             </div>
                         )}
                     </div>
